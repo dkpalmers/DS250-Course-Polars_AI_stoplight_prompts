@@ -99,3 +99,86 @@ plot
 ```
 
 I think this is enough for when.then.otherwise and they should get the idea.
+
+## Expression Expansion Idea
+
+### Idea 1
+Many of the columns contain minutes delayed for a particular reason, or the total minutes delayed. Use expression expansion to convert all the columns from minutes to hours by dividing their values by 60. 
+
+The problem with all these solutions is that the column still says "minutes". 
+```{python}
+#long way
+q3 = q2.with_columns((pl.col('minutes_delayed_carrier',
+                       'minutes_delayed_late_aircraft',
+                        'minutes_delayed_nas',
+                        'minutes_delayed_security',
+                        'minutes_delayed_weather',
+                        'minutes_delayed_total') / 60).round(2) )
+q3
+```
+
+```{python}
+#short way with regex
+q2.select(
+    (pl.col("^minutes_.*$") / 60).round(2)
+)
+
+```
+
+
+```{python}
+#short way with polars selectors
+import polars.selectors as cs
+
+q2.select(
+    (cs.starts_with("minutes") / 60).round(2)
+)
+```
+
+
+```{python}
+#fix the column name problem of minutes to hours
+# this seems a bit too complicated
+import polars.selectors as cs
+
+q2.with_columns([
+    (pl.col(col) / 60).alias(col.replace("minutes", "hours"))
+    for col in q2.select(cs.starts_with("minutes")).columns  
+]
+)
+```
+
+### Idea 2
+
+Maybe just convert all the num_of_delays columns to be in hundreds (i.e. divide them all by 100). __NOTE: If we did this idea, I think we should do this before calculating the new "weather delays" column.__
+
+But the num_of_delays_carrier is a string, so we have to convert it first. Is that too much too soon? (I don't think so, since they do casting in CSE110 a few times). Maybe we would have to give them a hint, but I think having them figure it out on their own is a good idea, if we cover a similar issue in class. For the online section though a hint may be necessary.
+
+ I guess we could have them just convert the column 3 columns that will be used for future calculations, but that misses the opportunity to show them these other short cuts for selecting multiple columns.
+
+Any other ideas??!
+
+```{python}
+#long way
+q3= q2.filter(pl.col('num_of_delays_carrier') != "1500+").with_columns(pl.col('num_of_delays_carrier').cast(int))
+
+q3.with_columns((pl.col('num_of_delays_carrier',
+                       'minutes_delayed_late_aircraft',
+                        'minutes_delayed_nas',
+                        'minutes_delayed_security',
+                        'minutes_delayed_weather',
+                        'minutes_delayed_total') / 100) )
+
+
+#short way with regex
+q3.select(
+    (pl.col("^num_of_delays_.*$") / 100)
+)
+
+#short way with polars selectors
+import polars.selectors as cs
+
+q3.select(
+    (cs.starts_with("num_of_delays") / 100)
+)
+# ```
