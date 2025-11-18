@@ -13,6 +13,7 @@ from lets_plot import *
 LetsPlot.setup_html(isolated_frame=True)
 ```
 
+Load in the original starwars data
 
 ```{python}
 data = pl.read_csv('StarWarsOriginal.csv')
@@ -276,28 +277,6 @@ name_df.head(10)
 
 Now I need to create their actual gmail column
 
-```{python}
-# def make_email(first, last, domain):
-#     domain_clean = domain.strip().lower()  # remove spaces and lowercase
-#     if "gmail" in domain_clean:
-#         return f"{first.lower()}.{last.lower()}@gmail.com"
-#     elif "yahoo" in domain_clean:
-#         return f"{last.lower()}_{first.lower()}@yahoo.com"
-#     elif "myorg" in domain_clean:
-#         random_numbers = "".join([str(np.random.randint(0, 10)) for _ in range(5)])
-#         return f"{last[:5].lower()}{first[:3].lower()}{random_numbers}@myorg.com"
-#     else:
-#         return None
-
-# # Apply using Polars `apply` on multiple columns
-# name_df = name_df.with_columns(
-#     pl.struct(["first_name", "last_name", "email_type"]).apply(
-#         lambda s: make_email(s["first_name"], s["last_name"], s["email_type"])
-#     ).alias("email")
-# )
-
-# name_df.head(10)
-```
 
 ```{python}
 STARTNUM = 54541
@@ -413,7 +392,7 @@ import polars as pl
 import os
 
 # Use current directory or Windows temp
-temp_path = os.path.join(os.getcwd(), "starwars.csv2")
+temp_path = os.path.join(os.getcwd(), "starwars2.csv")
 # or: temp_path = r"C:\Users\mecha\starwars.csv"
 
 # write the normal CSV first (with header)
@@ -436,51 +415,11 @@ print(f"CSV written with nonsense lines at {temp_path}")
 
 
 ```{python}
-# import polars as pl
-
-# data_raw = pl.read_csv(
-#     temp_path,
-#     try_parse_dates=False,
-#     dtypes=pl.Utf8,        # force all columns to strings
-#     ignore_errors=True      # skip problematic rows
-# )
-
-# data_raw.head(15)
-
-```
-
-
-```{python}
 data_skipped = pl.read_csv(temp_path, skip_rows=10)
 data_skipped.head(3)
 
 ```
 
-
 ```{python}
-import polars as pl
-
-# path to save locally
-local_path = "starwars_skip_rows102.csv"
-
-# write the current data (with email) to CSV
-data.write_csv(local_path)
-
-# Now prepend 10 nonsense rows above the header
-with open(local_path, "r") as f:
-    original = f.read()
-
-# create 10 nonsense lines
-nonsense = "\n".join(["This,is,a,nonsense,line"] * 10) + "\n"
-
-# overwrite the file with nonsense + original CSV
-with open(local_path, "w") as f:
-    f.write(nonsense + original)
-
-print(f"CSV saved locally as {local_path} with 10 nonsense rows prepended.")
-```
-
-
-```{python}
-name_df.write_csv("names2.csv")
+# name_df.write_csv("names2.csv")
 ```
