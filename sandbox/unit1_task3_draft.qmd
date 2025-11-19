@@ -170,21 +170,27 @@ plot
 ```
 
 
-## Compare the sum of 50 states to the Total column
+## Brigham for UT and ID
 
 
 ```{python}
-newby = df.filter(pl.col('name') == "Moroni").with_columns(
-    pl.sum_horizontal(pl.exclude(['DC', 'name', 'year', 'Total'])).alias('total_50')).select(['name', 'year', 'Total', 'total_50'])
-
-newby
+brigham = (
+    df.filter(pl.col('name') == "Brigham")
+        .with_columns(
+            ((pl.col('ID') + pl.col('UT')) / pl.col('Total'))
+            .alias('prop_UT_ID'))
+        .select(['name', 'year', 'Total', 'prop_UT_ID'])
+)
 ```
 
 ```{python}
-newby = df.with_columns(
-    pl.sum_horizontal(pl.exclude(['name', 'year', 'Total'])).alias('total_50')).filter(pl.col('Total') != pl.col('total_50'))
-    
-    #select(['name', 'year', 'Total', 'total_50'])
+(
+ggplot(data = brigham, mapping = aes(x = 'year', y = 'prop_UT_ID')) 
+    + geom_line() 
+    + scale_x_continuous(format = '.0f')
+    + labs(title = 'Babies Named Brigham from Utah and Idaho', 
+     y = 'Proportion of US Total from Utah and Idaho') 
+    + geom_hline(yintercept = .016, color = "red")  #as of 2020 estimates in M (1.8 + 3.5) / 331.4 = 1.6
 
-newby
+)
 ```
