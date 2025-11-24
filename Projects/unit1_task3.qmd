@@ -33,7 +33,9 @@ __Information:__ [data.md](https://github.com/byuidatascience/data4names/blob/ma
 
 ### Readings
 
-No new readings. Review the readings in the previous tasks as needed. Consider reading the optional readings in those sections if you have not yet.
+- [Chapter 10 - Selecting and Creating Columns](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch10.html)
+
+Review the readings in the previous tasks as needed. (Consider reading the optional readings in those sections if you have not yet.)
 
 ### Questions and Tasks
 

@@ -49,7 +49,7 @@ Read the Polars Cookbook, Chapter 1: Getting Started with Python Polars to get s
 For working with rows and columns of a data frame in polars, read the following sections of Python Polars: The Definitive Guide:
 
 - Chapter 7 - Beginning Expressions: [Selecting Columns with Expressions](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch07.html#id287) section
-- [Chapter 11 of Python Polars: The Definitive Guide](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch11.html). (You can skip the "Sort Nested Data Types" section if you wish)
+- [Chapter 11 - Filtering and Sorting Rows](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch11.html). (You can skip the "Sort Nested Data Types" section if you wish)
 
 Optional:
 

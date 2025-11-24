@@ -171,7 +171,7 @@ q3.with_columns((pl.col('num_of_delays_carrier',
 
 
 #short way with regex
-q3.select(
+df.with_columns(pl.col('num_of_delays_carrier').cast(int)).select(
     (pl.col("^num_of_delays_.*$") / 100)
 )
 

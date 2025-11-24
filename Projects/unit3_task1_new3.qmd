@@ -1,5 +1,5 @@
 ---
-title: "Project 3: Comparing Delay Types"
+title: "Project 3: Missing Data & JSON"
 date: 2025-10-29
 lastmod: 2025-10-29
 weight: 3
@@ -31,22 +31,29 @@ __Subject Matter:__ [Types of Delay](https://aspm.faa.gov/aspmhelp/index/Types_o
 
 
 ### Readings
+- Python Polars: The Definitive Guide, [Chapter 6, Reading JSON and NDJSON](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch06.html#id480)
+- Polars Cookbook, [Chapter 5, Handling Missing Data](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_05.xhtml)
+- Polars Users Guide, [Using pl.when](https://docs.pola.rs/user-guide/expressions/basic-operations/#conditionals)
 
-Python Polars: The Definitive Guide, [Chapter 15, Reshaping (especially the intro, pivot and unpivot)](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch15.html)
 
-#### Optional / Alternative Reading
+#### Optional Alternative References
+- Polars Cookbook, [Chapter 2, Reading and writing JSON files](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_02.xhtml#_idParaDest-88)
+- Python Polars: The Definitive Guide, Chapter 4, Data Types -> [Missing Values section](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch04.html#id48) brief summary
+- Polars Users Guide, [Missing Data](https://docs.pola.rs/user-guide/expressions/missing-data/#not-a-number-or-nan-values)
+- [Lambda Function](https://realpython.com/python-lambda/)
 
-Polars Cookbook, [Chapter 8, Reshaping and Tidying Data](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_08.xhtml#_idParaDest-270)
 
 ### Questions
 
- 1. __Which delay is the worst delay?__ Keep working with the cleaned dataset you created in the previous task. Compare the proportion of flights delayed due to Carrier, to Security, and to Late Aircraft. Show this comparison in a Chart and a Table. Describe your results.
+1. __Convert values to missing__ Start with a fresh copy of the flights dataset by reading it in from the link provided above (as opposed to starting with the dataset you ended with in the last assignment). Identify data values that are problematic, non-sense or impossible and change them to be missing. In your report include one record example (one row) from your clean data, in the raw JSON format. Your example should display at least one missing value so that we can verify it was done correctly. (Note: JSON will convert NaN's to null). Describe your process for finding values that needed to be changed, and how you changed them.
 
- 2. Create another chart that shows the proportion of delays for each reason (Carrier, Security, and Late Aircraft) across all 7 airports. Describe your results.
+2. __Filling in missing data__ For all the "minutes_delayed" columns, fill in any missing values with the median of that column. For the "num_of" columns, fill in missing values with that column's mean.
+
+3. __Display a histogram for num_of_delays_carrier and for minutes_delayed_nas (2 separate histograms in total). Comment on the shape of each one. Also report the mean of each of these columns now that missing values have been filled in.__
 
 ### Submission / Deliverables:
 
-No template is provided. You must create your own file. Answer the questions. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
+_Use this [unit3_task3_template](../Templates/unit3_task3_template.qmd) to create your Client Report. Answer the questions. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
 
 ::: {.callout-note collapse="true"}
 Your instructor will advise you, or it will be evident in Canvas, whether to submit an rendered .html file, or a link to the rendered file on GitHub on gh-pages. (Do not submit the URL to the GitHub `.qmd` file)  

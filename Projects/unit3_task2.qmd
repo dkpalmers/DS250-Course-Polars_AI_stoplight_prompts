@@ -1,5 +1,5 @@
 ---
-title: "Project 3: Weather Delays"
+title: "Project 3: Flights: Aggregation"
 date: 2025-10-29
 lastmod: 2025-10-29
 weight: 3
@@ -32,19 +32,26 @@ __Subject Matter:__ [Types of Delay](https://aspm.faa.gov/aspmhelp/index/Types_o
 
 ### Readings
 
-No new reading
+Polars Cookbook
+- Chapter 4 Data Transformation Techniques
+    - [Exploring basic aggregation](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_04.xhtml#_idParaDest-151)
+    - [using group by aggregation](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_04.xhtml#_idParaDest-158)
+
+
+Optional/alternative reading:
+
+::: {.callout-note collapse="true"}
+Polars Definitive Guide
+- [Chapter 13, Summarizing and Aggregating](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch13.html) (Advanced Methods section is optional)
+
+Polars User Guide, [Getting Started: Expressions and Context](https://docs.pola.rs/user-guide/getting-started/#expressions-and-contexts)
+:::
 
 ### Questions
 
 1. __Which airport has the worst delays?__ Describe the metric you chose, and why you chose it to determine the “worst” airport. Your answer should include a summary table that lists (for each airport) the total number of flights, total number of delayed flights, proportion of delayed flights, and average delay time in hours. 
 
-1. According to the BTS website, the “Weather” category only accounts for severe weather delays. Mild weather delays are not counted in the “Weather” category, but are actually included in both the “NAS” and “Late-Arriving Aircraft” categories. __Your job is to create a new column that calculates the total number of flights delayed by weather (both severe and mild).__ You will need to replace all the missing values in the Late Aircraft variable with the mean. Show your work by printing the first 5 rows of data in a table. Use these three rules for your calculations:  
-
-    a. 100% of delayed flights in the Weather category are due to weather  
-    a. 30% of all delayed flights in the Late-Arriving category are due to weather  
-    a. From April to August, 40% of delayed flights in the NAS category are due to weather. The rest of the months, the proportion rises to 65%  
-
-1. __Using the new weather variable calculated above, create a barplot showing the proportion of all flights that are delayed by weather at each airport. Describe what you learn from this graph.__  
+1. __Create a barplot showing the proportion of all flights that are delayed at each airport. Describe what you learn from this graph.__  
 
 
 ### Submission / Deliverables:
