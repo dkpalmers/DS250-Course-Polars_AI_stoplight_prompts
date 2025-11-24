@@ -28,7 +28,6 @@ execute:
 ```{python}
 import polars as pl
 import numpy as np
-import sqlite3
 from lets_plot import *
 
 LetsPlot.setup_html(isolated_frame=True)
@@ -68,5 +67,3 @@ _Describe your results and analysis here_
 
 
 ```
-
-
