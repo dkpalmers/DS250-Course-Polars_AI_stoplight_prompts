@@ -1,8 +1,8 @@
 ---
-title: "Unit 2 Task 3: Joins"
-date: 2025-10-27
-lastmod: 2025-10-27
-weight: 4
+title: "Unit 2 Task 3: Flights - Missing Data & JSON"
+date: 2025-10-29
+lastmod: 2025-10-29
+weight: 3
 draft: false
 # search related keywords
 keywords: [""]
@@ -10,58 +10,59 @@ keywords: [""]
 
 ### Background
 
-When you hear the word “relationship” what is the first thing that comes to mind? Probably not baseball. But a relationship is simply a way to describe how two or more objects are connected. There are many relationships in baseball such as those between teams and managers, players and salaries, even stadiums and concession prices. 
+Delayed flights are not something most people look forward to. In the best case scenario you may only wait a few extra minutes for the plane to be cleaned. However, those few minutes can stretch into hours if a mechanical issue is discovered or a storm develops. Arriving hours late may result in you missing a connecting flight, job interview, or your best friend’s wedding.
 
-The graphs on [Data Visualizations from Best Tickets](https://web.archive.org/web/20200804101201/http://www.besttickets.com/blog/mlb-players-census/) show many other relationships that exist in baseball.
+In 2003 the Bureau of Transportation Statistics (BTS) began collecting data on the causes of delayed flights. The categories they use are Air Carrier, National Aviation System, Weather, Late-Arriving Aircraft, and Security. You can visit the [BTS website](https://www.bts.gov/topics/airlines-and-airports/understanding-reporting-causes-flight-delays-and-cancellations) to read definitions of these categories.
 
 
 ### Client Request
 
-For this project you will use Python Polars code to join (a.k.a. merge) tables and perform additional manipulations. You will still need to connect to the database to pull the data in, but all the filtering, calculating, joining, etc. should be done with Python Polars.
+The JSON file for this project contains information on delays at 7 airports over 10 years. Your task is to clean the data, search for insights about flight delays, and communicate your results to the Client. The Client is a CEO of a flight booking app who is interested in the causes of flight delays and wants to know which airports have the worst delays. They also want to know the best month to fly if you want to avoid delays of any length.
 
 
 ### Data
-
-::: {.callout-note collapse="false"}
-This project will use the Lahman Baseball Database. In order to complete this project, you will need to download the database and save it inside the DS250 folder (hopefully you have a folder dedicated to this class) next to the .qmd file you will be using for this assignment. Note: Right click the __'Download'__ link and select "Save Link As" to download the data to your computer.
+::: {.callout-note collapse="true"}
+Every data science project should start with data, and our class projects are no different. Each project will have __'URL'__ and __'Information'__ links like the ones below. Right click the __'URL'__ link and select "Copy Link" to use it to import the data into your project. This is the preferred method to get data into your report as you will be publishing your report to GitHub. If you choose to download the data file to your computer you will need to save it in the same folder as your `.qmd` file for it to work correclty in GitHub. 
 :::
 
-__Download:__ [lahmansbaseballdb](/Data/lahmansbaseballdb.sqlite)  
-__Information:__ [Lahman Data Dictionary](/Data/readme2014.txt)  
-__Setup Instructions:__ [See SQL Setup](/Setup/sql_setup.qmd)
+__URL:__ [JSON File](https://github.com/byuidatascience/data4missing/raw/master/data-raw/flights_missing/flights_missing.json)   
+__Information:__ [Data Description](https://github.com/byuidatascience/data4missing/blob/master/data.md)  
+__Subject Matter:__ [Types of Delay](https://aspm.faa.gov/aspmhelp/index/Types_of_Delay.html)  
 
 
 ### Readings
+- Python Polars: The Definitive Guide, [Chapter 6, Reading JSON and NDJSON](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch06.html#id480)
+- Polars Cookbook, [Chapter 5, Handling Missing Data](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_05.xhtml)
+- Polars Users Guide, [Using pl.when](https://docs.pola.rs/user-guide/expressions/basic-operations/#conditionals)
+
+
+#### Optional Alternative References
+- Polars Cookbook, [Chapter 2, Reading and writing JSON files](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_02.xhtml#_idParaDest-88)
+- Python Polars: The Definitive Guide, Chapter 4, Data Types -> [Missing Values section](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch04.html#id48) brief summary
+- Polars Users Guide, [Missing Data](https://docs.pola.rs/user-guide/expressions/missing-data/#not-a-number-or-nan-values)
+- [Lambda Function](https://realpython.com/python-lambda/)
+
+
+### Questions
+
+1. __Convert values to missing__ Start with a fresh copy of the flights dataset by reading it in from the link provided above (as opposed to starting with the dataset you ended with in the last assignment). Identify data values that are problematic, non-sense or impossible and change them to be missing. In your report include one record example (one row) from your clean data, in the raw JSON format. Your example should display at least one missing value so that we can verify it was done correctly. (Note: JSON will convert NaN's to null). Describe your process for finding values that needed to be changed, and how you changed them.
+
+2. __Filling in missing data__ For all the "minutes_delayed" columns, fill in any missing values with the median of that column. For the "num_of" columns, fill in missing values with that column's mean.
+
+3. __Display a histogram for num_of_delays_carrier and for minutes_delayed_nas (2 separate histograms in total). Comment on the shape of each one. Also report the mean of each of these columns now that missing values have been filled in.__
+
+### Submission / Deliverables:
+
+_Use this [unit3_task3_template](../Templates/unit3_task3_template.qmd) to create your Client Report. Answer the questions. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
 
 ::: {.callout-note collapse="true"}
-Complete these readings before we cover the material in class. This will help you retain the material and make the class period more engaging - not less. 
-
-In other words, if an assignment is due on Wednesday, we will cover the material needed to complete the assignment on Tuesday. Therefore, you should complete the readings on Monday (or anytime before class on Tuesday).
+Your instructor will advise you, or it will be evident in Canvas, whether to submit an rendered .html file, or a link to the rendered file on GitHub on gh-pages. (Do not submit the URL to the GitHub `.qmd` file)  
 :::
 
-[Polars User Guide, Joins](https://docs.pola.rs/user-guide/transformations/joins/) (we will only be doing equi joins. So, anything after the summaries of the various join strategies is optional).
-
-Optional/Alternative Reading
+Here are some reminder instructions if you are using GitHub:
 
 ::: {.callout-note collapse="true"}
-[Polars Definitive Guide, Chap 14, Joining and Concatenating](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch14.html)
-
-[Polars Cookbook, Chap 8 Reshaping and Tidying Data, Joining DataFrames](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_08.xhtml#_idParaDest-282)
-
-:::
-
-### Questions and Tasks
-
-Download the [Unit 2 Task 3 Template](../Templates/unit2_task3_template.qmd).
-
-1. Write an SQL query that pulls in the the salaries table and the collegeplaying table (and any other tables you might need) and store them in polars dataframes. Combine the dataframes to create a list of baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID and teamID associated with each salary.
-
-1. Pick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Be creative! Write an SQL query to read in the table(s) you need, then use pandas to manipulate the data. Finally, make a graph using Lets-Plot to visualize the comparison. What do you learn?
-
-
-### Submission:
-::: {.callout-note collapse="true"}
-When you have completed the report, you will need to follow this process to submit your work:
+When you have completed the report and are ready to submit it, you will need to render the project into HTML files and publish it to GitHub pages. Follow these steps:
 
 1. Have this assignment's template/quarto file open in VS Code and nothing else
 1. Click `Preview Button` in VS Code in the top right of the screen
@@ -69,25 +70,19 @@ When you have completed the report, you will need to follow this process to subm
     b. Confirm everything displas as you would like it to
     c. How you see it will be how it is viewed for grading
     d. If there is an error in any cell of the quarto files, the rendering will stop and you will need to fix the error before rendering again (if you get stuck post your error in Slack)
-1. Once the report is confirmed close the preview and open a VS Code `Terminal`
-    a. click `Terminal` in the top menu bar and then `New Terminal`
-1. Type the following in the terminal `quarto render `
-    a. Then drag and drop this assignment into the terminal. This will add the file path to the terminal command
-    a. Press Enter
-1. This will render the project into a `HTML` file in the same location as the `.qmd` file
-1. To locate the file in VS Code
-    a. Right click on the file in the file explorer and select `Reveal in File Explorer`(Win) or `Reveal in Finder`(Mac)
-1. Upload `HTML` file into Canvas
-:::
-
-
-### Deliverables:
-
-_Use this [unit2_task3_template](../Templates/unit2_task3_template.qmd) to submit your Client Report._
-
-Answers to the questions | tasks. Each should include a written description of your results, code cells with comments, charts and/or tables.
-
-
-::: {.callout-note collapse="false"}
-_Your report should be written in quarto markdown files and rendered to an HTML File. Upload the HTML file in Canvas. (Do not submit the `.qmd` file)_  
+1. Once the report is confirmed close the preview and open the `GitHub Desktop` application
+1. Confirm you are in the correct repository in the top left corner of the screen
+1. Confirm you are on the correct branch `Main` in the top left corner of the screen (Never change off the `Main` branch)
+1. Type a summary of the changes in the `Summary` box
+1. Click `Commit to main` blue button in the bottom left corner
+1. Click `Push origin` blue button in the middle right of the screen
+    a. This will push all your changes in the project .qmd file to GitHub
+    b. The publish.yml file will kick off an automated process to render the project into HTML files
+    c. The HTML files will be published to GitHub pages in the gh-pages branch
+    d. The URL to the published project will be in the deployment section in GitHub
+        1. In `GitHub Desktop` click `Open in GitHub` to navigete to the repository
+        2. Click on the `Actions` tab and make sure there were no errors in the rendering process
+        3. Click on the `deployment` section of the main page of the repository to find the URL
+        4. Navigate to the URL and confirm it displays as you intended
+        5. Copy the URL and submit it in Canvas
 :::

@@ -1,68 +1,52 @@
 ---
-title: "Unit 4 Stretch: Regression ML"
+title: "Unit 2 Task 4: Comparing Delay Types - Pivot"
 date: 2025-10-29
 lastmod: 2025-10-29
-weight: 5
+weight: 3
 draft: false
 # search related keywords
 keywords: [""]
 ---
 
-
 ### Background
 
-The clean air act of 1970 was the beginning of the end for the use of asbestos in home building.  By 1976, the U.S. Environmental Protection Agency (EPA) was given authority to restrict the use of asbestos in paint. Homes built during and before this period are known to have materials with asbestos You can [read more about this ban](https://www.asbestos.com/mesothelioma-lawyer/legislation/ban/).  
+Delayed flights are not something most people look forward to. In the best case scenario you may only wait a few extra minutes for the plane to be cleaned. However, those few minutes can stretch into hours if a mechanical issue is discovered or a storm develops. Arriving hours late may result in you missing a connecting flight, job interview, or your best friend’s wedding.
 
-The state of Colorado has a large portion of their residential dwelling data that is missing the year built and they would like you to build a predictive model that can __classify__ if a house is built pre 1980.  
-
-Colorado gave you home sales data for the city of Denver from 2013 on which to train your model. They said all the column names should be descriptive enough for your modeling and that they would like you to use the latest machine learning methods.
+In 2003 the Bureau of Transportation Statistics (BTS) began collecting data on the causes of delayed flights. The categories they use are Air Carrier, National Aviation System, Weather, Late-Arriving Aircraft, and Security. You can visit the [BTS website](https://www.bts.gov/topics/airlines-and-airports/understanding-reporting-causes-flight-delays-and-cancellations) to read definitions of these categories.
 
 
 ### Client Request
 
-The Client is a state agency in Colorado that is responsible for the health and safety of its residents. They have a large portion of their residential dwelling data that is missing the year built and they would like you to build a predictive model that can classify if a house is built pre 1980.
+The JSON file for this project contains information on delays at 7 airports over 10 years. Your task is to clean the data, search for insights about flight delays, and communicate your results to the Client. The Client is a CEO of a flight booking app who is interested in the causes of flight delays and wants to know which airports have the worst delays. They also want to know the best month to fly if you want to avoid delays of any length.
 
 
 ### Data
+::: {.callout-note collapse="true"}
+Every data science project should start with data, and our class projects are no different. Each project will have __'URL'__ and __'Information'__ links like the ones below. Right click the __'URL'__ link and select "Copy Link" to use it to import the data into your project. This is the preferred method to get data into your report as you will be publishing your report to GitHub. If you choose to download the data file to your computer you will need to save it in the same folder as your `.qmd` file for it to work correclty in GitHub. 
+:::
 
-__URL:__  [dwellings_ml.csv (ml ready)](https://github.com/byuidatascience/data4dwellings/raw/master/data-raw/dwellings_ml/dwellings_ml.csv)  
-__Optional URL:__  [dwellings_neighborhoods_ml.csv (ml ready)](https://github.com/byuidatascience/data4dwellings/raw/master/data-raw/dwellings_neighborhoods_ml/dwellings_neighborhoods_ml.csv)  
-__Informational URL:__  [dwellings_denver.csv (not cleansed)](https://github.com/byuidatascience/data4dwellings/raw/master/data-raw/dwellings_denver/dwellings_denver.csv)  
-__Information:__ [Data description](https://github.com/byuidatascience/data4dwellings/blob/master/data.md)  
+__URL:__ [JSON File](https://github.com/byuidatascience/data4missing/raw/master/data-raw/flights_missing/flights_missing.json)   
+__Information:__ [Data Description](https://github.com/byuidatascience/data4missing/blob/master/data.md)  
+__Subject Matter:__ [Types of Delay](https://aspm.faa.gov/aspmhelp/index/Types_of_Delay.html)  
 
 
 ### Readings
 
+Python Polars: The Definitive Guide, [Chapter 15, Reshaping (especially the intro, pivot and unpivot)](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch15.html)
 
-- REVIEW [Polars User Guide, Joins](https://docs.pola.rs/user-guide/transformations/joins/) (we will only be doing equi joins. So, anything after the summaries of the various join strategies is optional).
-- [All regressor algorithms in scikit-learn](https://www.kaggle.com/code/grigol1/all-regression-models-55-sklearn-models) (skim)
-- [How to choose a good evaluation metric for your Machine learning model](https://web.archive.org/web/20240213170741/https://ranvir.xyz/blog/how-to-evaluate-your-machine-learning-model-like-a-pro-metrics/) (you can start in section 11 - Evaluating for regression problems)
+#### Optional / Alternative Reading
 
+Polars Cookbook, [Chapter 8, Reshaping and Tidying Data](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_08.xhtml#_idParaDest-270)
 
-#### Optional References
-
-
-- [Another overview and description of pros and cons for popular classifiers and regression models](https://www.geeksforgeeks.org/supervised-machine-learning/)
-- [Boosted algorithms in scikit-learn](https://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting)
-- Review joins
-    - [Polars Definitive Guide, Chap 14, Joining and Concatenating](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch14.html)
-    - [Polars Cookbook, Chap 8 Reshaping and Tidying Data, Joining DataFrames](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_08.xhtml#_idParaDest-282)
-
-
- 
 ### Questions
 
-1. __Repeat the classification model using 3 different algorithms.__ Display their Permutation Importance, and Classification Report. Explian the differences between the models and which one you would recommend to the Client.  
+ 1. __Which delay is the worst delay?__ Keep working with the cleaned dataset you created in the previous task. Compare the proportion of flights delayed due to Carrier, to Security, and to Late Aircraft. Show this comparison in a Chart and a Table. Describe your results.
 
-1. __Join the `dwellings_neighborhoods_ml.csv` data to the `dwelling_ml.csv` on the `parcel` column to create a new dataset. Duplicate the code for the model you recommended in the stretch question above and update it to use this data.__ Explain the differences and if this changes the model you recomend to the Client.  
-
-1. __Can you build a model that predicts the year a house was built?__ Note this is a regression ML model, not a classifier. Report appropriate evaluation metrics for the model. Explain the model and the evaluation metrics you used to determine if the model is good.
-
-
+ 2. __Create another chart that shows the proportion of delays for each reason (Carrier, Security, and Late Aircraft) across all 7 airports. Describe your results.__
 
 ### Submission / Deliverables:
 
-_No template is provided for this assignment. You must create your own file as part of the task. Answer the questions in this assignment. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
+No template is provided. You must create your own file. Answer the questions. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
 
 ::: {.callout-note collapse="true"}
 Your instructor will advise you, or it will be evident in Canvas, whether to submit an rendered .html file, or a link to the rendered file on GitHub on gh-pages. (Do not submit the URL to the GitHub `.qmd` file)  

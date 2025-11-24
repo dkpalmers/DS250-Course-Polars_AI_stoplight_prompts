@@ -73,7 +73,7 @@ _type your results and analysis here_
 
 ## QUESTION 3
 
-1. __Consider doing some data validation. For the name David, calculate a sum of all 50 states and District of Columbia for each year. Now compare that total to the value in the 'Total' column. In which years do they not agree?__
+1. __Consider doing some data validation. For the name David, calculate a sum of all 50 states and District of Columbia for each year. Now compare that total to the value in the 'Total' column. In which years, if any, do they not agree?__
 
 _type your results and analysis here_
 

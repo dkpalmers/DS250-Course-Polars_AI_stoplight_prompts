@@ -43,7 +43,7 @@ __Download this [Unit 1 Task 3 Template](../Templates/unit1_task3_template.qmd) 
 
 1. __Make a new column that represents the total number of babies with your name for only those states in which you have lived. (If you have only ever lived in one state, pick at least one other state so you get practice summing across columns). Make a graph displaying that total for your name over time.__  
 1. __Let's look at a name that is special for members of the church: Brigham. For each year, calculate what proportion of babies named Brigham were born in Idaho and Utah? Make a graph displaying the proportion over time.__
-1. __Consider doing some data validation. For the name David, calculate a sum of all 50 states and District of Columbia for each year. Now compare that total to the value in the 'Total' column. In which years do they not agree?__ 
+1. __Consider doing some data validation. For the name David, calculate a sum of all 50 states and District of Columbia for each year. Now compare that total to the value in the 'Total' column. Are there any years that they do not agree?__ 
 
 ### Submission:
 

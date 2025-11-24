@@ -21,7 +21,7 @@ website:
 
   page-footer: 
     border: true
-    left: "J. Hathaway, Chaz Clark, David Palmer BYU-I 2025©"
+    left: "BYU-I 2025©"
     right: 
       - icon: github
         href: https://github.com/byuidatascience
@@ -48,7 +48,7 @@ website:
             file: Projects/unit1_task3.qmd
           - text: "Task 4"
             file: Projects/unit1_task4.qmd
-      - text: "Unit 2 SQLite"
+      - text: "Unit 2 Flights"
         menu:
           - text: "Task 1"
             file: Projects/unit2_task1.qmd
@@ -58,7 +58,7 @@ website:
             file: Projects/unit2_task3.qmd
           - text: "Task 4"
             file: Projects/unit2_task4.qmd
-      - text: "Unit 3 Wrangling"
+      - text: "Unit 3 DataBaseBall"
         menu:
           - text: "Task 1"
             file: Projects/unit3_task1.qmd
