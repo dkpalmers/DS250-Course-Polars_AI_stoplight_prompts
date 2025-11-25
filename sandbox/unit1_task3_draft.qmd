@@ -1,4 +1,7 @@
-
+---
+execute:
+    error: true
+---
 
 This assignment will cover creating new columns and selecting existing columns.
 
