@@ -1,0 +1,129 @@
+---
+title: "Client Report - String Manupulation with Regex"
+subtitle: "Unit 5 Task 1"
+author: "[STUDENT NAME]"
+format:
+  html:
+    self-contained: true
+    page-layout: full
+    title-block-banner: true
+    toc: true
+    toc-depth: 3
+    toc-location: body
+    number-sections: false
+    html-math-method: katex
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: hover
+    code-tools:
+        source: false
+        toggle: true
+        caption: See code
+execute: 
+  warning: false
+    
+---
+
+```{python}
+import polars as pl
+import requests
+import io
+import numpy as np
+from lets_plot import *
+
+LetsPlot.setup_html(isolated_frame=True)
+```
+
+## QUESTION 1
+
+__Load in the Star Wars Data.__ Sometimes data doesn't come in a clean form and metadata listed before the header. Use the parameters in the read_csv function to avoid the rows that prevent a successful read.
+
+[link to read_csv docs](http://docs.pola.rs/api/python/stable/reference/api/polars.read_csv.html)
+
+
+
+```{python}
+# Students should manually look at the data to see that there are ten rows above the data that are nonesense. If they don't use skip rows, the read_csv function fails because polars wants to infer the schema based on the first rows. Because on row 11 the data gains additional rows, the function throws the error. Simply skip 10 rows to start the schema on actual data and the error is avoided.
+
+data = pl.read_csv('StarWars_with_emails.csv',
+skip_rows=10)
+data.head()
+data.shape
+```
+
+## QUESTION 2
+
+__Remake the respondent names from the email column.__ Each respondentID has a unique email they used to submit their survey. We can see that each of the emails have a different format for their names. 
+
+Use regex to create a first and last name column for each email.
+- Make a table that counts the number of times each domain is used. (take note that sometimes the email domain is not lowercase. Make them uniform for clean counting)
+- Make a table that has a first and last name columns instead of an email column. Show the first 5 results.
+
+
+
+```{python}
+data = data.with_columns([
+    pl.when(pl.col("email").str.to_lowercase().str.contains("gmail"))
+      .then(pl.lit(1))
+    .when(pl.col("email").str.to_lowercase().str.contains("yahoo"))
+      .then(pl.lit(2))
+    .when(pl.col("email").str.to_lowercase().str.contains("myorg"))
+      .then(pl.lit(3))
+    .otherwise(pl.lit(4))
+    .alias("email_type")
+])
+
+data.select(["email", "email_type"]).head(10)
+```
+
+```{python}
+data.group_by('email_type').agg(
+    pl.col('email_type').count().alias('domail_count')
+)
+```
+
+```{python}
+data = data.with_columns([
+    # everything before the first @
+    pl.col("email").str.replace(r"@.*$", "", literal=False).alias("name"),
+
+    # everything after the last @
+    pl.col("email").str.replace(r"^.*@", "", literal=False).alias("domain"),
+])
+
+
+
+data.head()
+```
+
+```{python}
+
+data = data.with_columns([
+    pl.col('domain').str.strip_chars_end().str.to_lowercase().alias('domain')
+])
+
+# Make first name
+data = data.with_columns([
+    pl.when(pl.col('domain') == 'gmail')
+    .then(pl.col('name').str.replace(r"\..*$", ""))
+    .when(pl.col('domain') == 'yahoo')
+    .then(pl.col('name').str.replace(r"^.*_", ""))
+    .otherwise(pl.col('name').str.extract(r"\d+(.*)$", 1))
+    .alias('first_name')
+])
+
+# Make last name
+data = data.with_columns([
+    pl.when(pl.col('domain') == 'gmail')
+    .then(pl.col('name').str.replace(r"^.*\.", ""))
+    .when(pl.col('domain') == 'yahoo')
+    .then(pl.col('name').str.replace(r"_.*$", ""))
+    .otherwise(pl.col('name').str.replace(r'\d.*$', ""))
+    .alias('last_name')
+])
+
+
+data.select('name','first_name', 'last_name', 'domain', 'email').head(5)
+
+```

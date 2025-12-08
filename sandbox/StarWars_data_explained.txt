@@ -1,0 +1,15 @@
+The star wars data files explained:
+
+StarWarsOriginal:
+The original dataset we have used in the past
+
+StarWars_with_emails:
+The original starwars dataset with some unique emails generated onto it
+There are three email types: Google, Yahoo, and Myorg
+
+StarWars_emails_deconstructed:
+This takes the emails from StarWars_with_emails and deconsstructs them.
+
+The alternative files:
+These files were the first attempt at creating the emails. The only real difference is that the Myorg
+emails don't use the same generation logic. They may not be needed at all.
