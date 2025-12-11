@@ -31,7 +31,7 @@ How to uninstall python on mac:
 - If it does not have a folder in the applciations folder it will be much more difficult to uninstall. 
 - Do not uninstall python 2.7 if you have it. We will not be using it but it is required for some system functions.
 
-We need to download and install the latest version of python approved for this course. (__Python 3.12__)
+We need to download and install the latest version of python approved for this course. (__Python 3.13__) We do not reccomend installing Python 3.14 at this time as the libraries have not had enought time to update to the changes from 3.13 --> 3.14. 
 
 __Note:__ [***do not***] install python from `VS Code` or the `Microsoft Store` or `Anaconda`
 Python.org is the _only_ place you should install VS Code from (link below)
