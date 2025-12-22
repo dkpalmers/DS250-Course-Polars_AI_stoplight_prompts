@@ -1,4 +1,7 @@
-
+---
+execute:
+  eval: false
+---
 
 
 
@@ -16,7 +19,7 @@ LetsPlot.setup_html(isolated_frame=True)
 Load in the original starwars data
 
 ```{python}
-data = pl.read_csv('StarWarsOriginal.csv')
+data = pl.read_csv('https://github.com/fivethirtyeight/data/raw/master/star-wars-survey/StarWars.csv')
 data.columns
 
 

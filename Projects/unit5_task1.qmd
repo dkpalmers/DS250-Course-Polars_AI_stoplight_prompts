@@ -1,7 +1,7 @@
 ---
 title: "Project 5: The war with Star Wars"
-date: 2025-10-29
-lastmod: 2025-10-29
+date: 2025-12-22
+lastmod: 2025-12-22
 weight: 5
 draft: false
 # search related keywords
@@ -12,16 +12,19 @@ keywords: [""]
 
 Survey data is notoriously difficult to munge.  Even when the data is recorded cleanly the options for ‘write in questions’, ‘choose from multiple answers’, ‘pick all that are right’, and ‘multiple choice questions’ makes storing the data in a tidy format difficult.
 
-In 2014, FiveThirtyEight surveyed over 1000 people to write the article titled, [America’s Favorite ‘Star Wars’ Movies (And Least Favorite Characters)](https://fivethirtyeight.com/features/americas-favorite-star-wars-movies-and-least-favorite-characters/). They have provided the data on [GitHub](https://github.com/fivethirtyeight/data/tree/master/star-wars-survey). 
+In 2014, FiveThirtyEight surveyed over 1000 people to write the article titled, [America’s Favorite ‘Star Wars’ Movies (And Least Favorite Characters)](https://fivethirtyeight.com/features/americas-favorite-star-wars-movies-and-least-favorite-characters/). They have provided the data on [GitHub](https://github.com/fivethirtyeight/data/tree/master/star-wars-survey). We have added ficitious email addresses to the dataset.
 
-For this project, your client would like to use the Star Wars survey data to figure out if they can predict an interviewing job candidate’s current income based on a few responses about Star Wars movies.  
+For this project, your client would like to use the Star Wars survey data in a new marketing initiative. They would like to email survey participants with product offers, but also use the responses to build a machine learning model to predict a person's outcome based on a few responses about Star Wars movies. 
 
+Most of the data cleaning has been done for you, but there is still some data preparation that needs to take place.
 
 ### Client Request
 
-The Client is who performed the survey but outsourced the analitics to a 3rd party. They want you to clean up the data so you can: 
+The Client is who performed the survey but outsourced the analitics to a 3rd party (you). They want you to clean up the data so you can: 
+    a. Extract the names of respondents and their email info
     a. Validate the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article
     a. Predict if a person from the survey makes at least $50k
+
 
 ### Data
 
@@ -33,6 +36,8 @@ __Information:__ [Article](https://fivethirtyeight.com/features/americas-favorit
 
 - [Intro to the concept of regular expression (a.k.a. regex)](http://2017.compciv.org/guide/topics/regular-expressions/regex-early-overview.html)
 - Polars Cookbook, [Chapter 6, Strings](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_06.xhtml)
+- [read_csv documentation](http://docs.pola.rs/api/python/stable/reference/api/polars.read_csv.html)
+- [replace() documentation](https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.replace_strict.html#polars.Expr.replace_strict)
 
 #### Optional Alternative Readings
 
@@ -43,12 +48,17 @@ __Information:__ [Article](https://fivethirtyeight.com/features/americas-favorit
 
 ### Questions
 
-1. __Shorten the column names and clean them up for easier use with pandas.__ Provide a table or list that exemplifies how you fixed the names.  
+1. __Load in the Star Wars Data.__ Sometimes data doesn't come in a clean format and has metadata listed before the column headers. Use the arguments in the read_csv function to avoid the rows that prevent a successful reading of the data.
 
-1. __Filter the dataset to 835 respondents that have seen at least one film__ (Hint: Don't use the column `Have you seen any of the 6 films in the Star Wars franchise?`) 
+2. __Remake the respondent names from the email column. Show the first 5 rows of the result.__ Each respondentID has a unique email they used to submit their survey. We can see that each of the emails have a different format for their names. 
 
-1. __Validate that the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article.__  These visuals should be similar, including titles, subtitles, gridlines, order of categories, colors, etc. But, they don't have to be exact. They need to be close enough that we can validate that the values in the dataset match the graphs in the chart. Though their charts were built using a different plotting software, the more you push yourself for an exact replica, the more you will learn. Spend _at least_ a couple of hours on this. 
+Use regex to create a first name column, a last name column, and a email_domain column to your data set for each row. Show the first 5 rows of the result (you don't have to show all the columns, just the email, first_name, last_name, and email_domain).
 
+This table should be placed either in the the Methods section or an Appendix of the report submitted for this unit (see below).
+
+3. __Make a table that counts the number of times each domain is used.__ Note that sometimes the email domain is not lowercase. Make them uniform for clean counting.
+
+This table should be placed either in the the Methods section or an Appendix of the report submitted for this unit (see below).
 
 ### Submission / Deliverables:
 

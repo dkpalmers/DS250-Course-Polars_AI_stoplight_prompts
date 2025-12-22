@@ -12,16 +12,19 @@ keywords: [""]
 
 Survey data is notoriously difficult to munge.  Even when the data is recorded cleanly the options for ‘write in questions’, ‘choose from multiple answers’, ‘pick all that are right’, and ‘multiple choice questions’ makes storing the data in a tidy format difficult.
 
-In 2014, FiveThirtyEight surveyed over 1000 people to write the article titled, [America’s Favorite ‘Star Wars’ Movies (And Least Favorite Characters)](https://fivethirtyeight.com/features/americas-favorite-star-wars-movies-and-least-favorite-characters/). They have provided the data on [GitHub](https://github.com/fivethirtyeight/data/tree/master/star-wars-survey). 
+In 2014, FiveThirtyEight surveyed over 1000 people to write the article titled, [America’s Favorite ‘Star Wars’ Movies (And Least Favorite Characters)](https://fivethirtyeight.com/features/americas-favorite-star-wars-movies-and-least-favorite-characters/). They have provided the data on [GitHub](https://github.com/fivethirtyeight/data/tree/master/star-wars-survey). We have added ficitious email addresses to the dataset.
 
-For this project, your client would like to use the Star Wars survey data to figure out if they can predict an interviewing job candidate’s current income based on a few responses about Star Wars movies.  
+For this project, your client would like to use the Star Wars survey data in a new marketing initiative. They would like to email survey participants with product offers, but also use the responses to build a machine learning model to predict a person's outcome based on a few responses about Star Wars movies. 
 
+Most of the data cleaning has been done for you, but there is still some data preparation that needs to take place.
 
 ### Client Request
 
-The Client is who performed the survey but outsourced the analitics to a 3rd party. They want you to clean up the data so you can: 
+The Client is who performed the survey but outsourced the analitics to a 3rd party (you). They want you to clean up the data so you can: 
+    a. Extract the names of respondents and their email info
     a. Validate the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article
     a. Predict if a person from the survey makes at least $50k
+
 
 ### Data
 
@@ -31,21 +34,17 @@ __Information:__ [Article](https://fivethirtyeight.com/features/americas-favorit
 
 ### Readings
 
-Review pivoting and unpivoting.
-
--Python Polars: The Definitive Guide, [Chapter 15 Reshaping (especially pivoting and unpivoting)](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch15.html)
-
-#### Optional Alternative Reading
-
-Polars Cookbook, [Chapter 8 Reshaping and Tidying Data](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_08.xhtml#_idParaDest-270)
+- [Dummy encoding](https://docs.pola.rs/api/python/stable/reference/dataframe/api/polars.DataFrame.to_dummies.html)
+- Skim Python Polars: The Definitive Guide, [Chapter 14, Vertical and Horizontal Stacking](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch14.html#id181)sections
 
 ### Questions
 
-1. __Prep the data for machine learning:__
-    a. Create your target (also known as “y” or “label”) column based on the new income range column  
-    a. One-hot encode all remaining categorical columns 
+1. __Finish prepping the data for machine learning:__
 
-1. __Build a machine learning model that predicts whether a person makes at least $50k. Describe your model and report the accuracy.__
+    a. One-hot encode all remaining categorical columns 
+    a. Create your target (also known as “y” or “label”) column to indicate whether a person had a Household Income $50,000 or greater  
+
+1. __Build a machine learning model that predicts whether a person had a Household Income $50,000 or greater with at least 65% accuracy. Describe your model and report the accuracy.__
 
 
 ### Submission / Deliverables:

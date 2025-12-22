@@ -12,14 +12,19 @@ keywords: [""]
 
 Survey data is notoriously difficult to munge.  Even when the data is recorded cleanly the options for ‘write in questions’, ‘choose from multiple answers’, ‘pick all that are right’, and ‘multiple choice questions’ makes storing the data in a tidy format difficult.
 
-In 2014, FiveThirtyEight surveyed over 1000 people to write the article titled, [America’s Favorite ‘Star Wars’ Movies (And Least Favorite Characters)](https://fivethirtyeight.com/features/americas-favorite-star-wars-movies-and-least-favorite-characters/). They have provided the data on [GitHub](https://github.com/fivethirtyeight/data/tree/master/star-wars-survey). 
+In 2014, FiveThirtyEight surveyed over 1000 people to write the article titled, [America’s Favorite ‘Star Wars’ Movies (And Least Favorite Characters)](https://fivethirtyeight.com/features/americas-favorite-star-wars-movies-and-least-favorite-characters/). They have provided the data on [GitHub](https://github.com/fivethirtyeight/data/tree/master/star-wars-survey). We have added ficitious email addresses to the dataset.
 
-For this project, your client would like to use the Star Wars survey data.  
+For this project, your client would like to use the Star Wars survey data in a new marketing initiative. They would like to email survey participants with product offers, but also use the responses to build a machine learning model to predict a person's outcome based on a few responses about Star Wars movies. 
 
+Most of the data cleaning has been done for you, but there is still some data preparation that needs to take place.
 
 ### Client Request
 
-The Client is who performed the survey but outsourced the analitics to a 3rd party. They want you to clean up the data so you can ultimately run a machine learning model.For this task, complete the items in the Questions section below.
+The Client is who performed the survey but outsourced the analitics to a 3rd party (you). They want you to clean up the data so you can: 
+    a. Extract the names of respondents and their email info
+    a. Validate the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article
+    a. Predict if a person from the survey makes at least $50k
+
 
 ### Data
 
@@ -29,23 +34,18 @@ __Information:__ [Article](https://fivethirtyeight.com/features/americas-favorit
 
 ### Readings
 
-No new readings. Review previous readings as needed:
-
-- [replace() documentation](https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.replace_strict.html#polars.Expr.replace_strict)
-- [Dummy encoding](https://docs.pola.rs/api/python/stable/reference/dataframe/api/polars.DataFrame.to_dummies.html)
-- Skim Python Polars: The Definitive Guide, [Chapter 14, Vertical and Horizontal Stacking(https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch14.html#id181)] sections
-
-
+No new readings. Apply the new concepts in this unit and review/practice concepts from past units.
 
 
 ### Questions
+
+1. __Filter the dataset to 835 respondents that have seen at least one film__ (Hint: Don’t use the column `Have you seen any of the 6 films in the Star Wars franchise?`)
 
 1. __Clean and format the data so that it can be used in a machine learning model.__ As you format the data, you should complete each item listed below. In your final report provide an excerpt of the reformatted data with a short description of the changes made.  
 
     a. Create a new column that converts the age ranges to a single number. Drop the age range categorical column  
     a. Create a new column that converts the education groupings to a single number. Drop the school categorical column  
     a. Create a new column that converts the income ranges to a single number. Drop the income range categorical column  
-    a. Create your target (also known as “y” or “label”) column to indicate whether a person had a Household Income $50,000 or greater  
     a. Encode favorability ratings as a number. Remove the favorability categorical columns.
 
 
