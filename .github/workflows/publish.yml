@@ -23,9 +23,9 @@ jobs:
       - name: Install Python and Dependencies
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.13'
           #cache: 'pip'
-      - run: pip install jupyter numpy pandas scikit-learn lets-plot palmerpenguins plotly.express seaborn altair altair_viewer tabulate nbformat nbclient kaleido skimpy matplotlib
+      - run: pip install jupyter numpy polars pandas scikit-learn lets-plot palmerpenguins plotly.express seaborn altair altair_viewer tabulate nbformat nbclient kaleido skimpy matplotlib
       #- run: pip install -r requirements.txt
       #- run: pip install jupyter numpy pandas scikit-learn tabulate altair altair_viewer nbformat nbclient plotly.express
 
