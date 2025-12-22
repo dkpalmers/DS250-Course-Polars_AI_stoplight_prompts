@@ -24,12 +24,12 @@ __URL:__ [penguins data](https://aeturrell.github.io/python4DS/data-visualise.ht
 
 ### Readings
 
-Please do the assigned **before coming to class**!
+Please do the assigned reading **before coming to class**!
 
 Many people have different levels of experience with Python, VS Code, and programming in general. That is why there are so many and why skimming may be a good strategy for some students, but not for others. 
 
 - [Course Setup](../setup.qmd) (Do)
-- [Learn about our Book Python for Data Science](../Course%20Materials/python.qmd) (Skim)
+<!-- - [Learn about our Book Python for Data Science](../Course%20Materials/python.qmd) (Skim) -->
 - [PY4DS: First Steps](https://aeturrell.github.io/python4DS/introduction.html) (Skim)
 - [PY4DS: CH1 Whole Game](https://aeturrell.github.io/python4DS/whole-game.html) (Skim)
 - [PY4DS: CH2 Data Visualization](https://aeturrell.github.io/python4DS/data-visualise.html) (Read)
@@ -46,12 +46,12 @@ Many people have different levels of experience with Python, VS Code, and progra
 
 ### Questions and Tasks
 
-1. __Download this [Project0 Template](../Templates/P0_template.qmd). The template has working code for the Penguine data set. You need to finish the project by adding code to recreate charts from the book. More specifically, copy and paste code from the book into this template quarto file to:__
-    1. __Include the tables created from [PY4DS: CH2 Data Visualization](https://aeturrell.github.io/python4DS/data-visualise.html)__  
-    2. __Recreate the example charts from [PY4DS: CH2 Data Visualization](https://aeturrell.github.io/python4DS/data-visualise.html) of the textbook.__  
-    3. __Follow the instructions in the submission section below to submit your work__
+1. Download this [Project0 Template](../Templates/P0_template.qmd). The template has working code for the Penguin data set. You need to finish the project by adding code to recreate charts from the book. More specifically, copy and paste code from the book into this template quarto file to:
+    1. Include the tables created from [PY4DS: CH2 Data Visualization](https://aeturrell.github.io/python4DS/data-visualise.html)
+    2. Recreate the example charts from [PY4DS: CH2 Data Visualization](https://aeturrell.github.io/python4DS/data-visualise.html) of the textbook.
+    3. Follow the instructions in the submission section below to submit your work
 
-The main purpose of this project is to ensure your set-up and installations are done correctly. You will know this is the case if you can create an html file with those graphs and table in it.
+__The main purpose of this project is to ensure your set-up and installations are done correctly (not necessarily to get all the charts/tables from the book recreated). You will know this is the case if you can create an html file with those graphs and table in it.__
 
 ### Submission:
 
