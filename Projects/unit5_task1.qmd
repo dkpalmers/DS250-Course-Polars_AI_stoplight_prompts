@@ -28,7 +28,7 @@ The Client is who performed the survey but outsourced the analitics to a 3rd par
 
 ### Data
 
-__URL:__ [Star Wars data]({{site.path}}/Data/StarWars_with_emails.csv) 
+__URL:__ [Star Wars data]({{site-path}}/Data/StarWars_with_emails.csv) 
 
 __Information:__ [Article](https://fivethirtyeight.com/features/americas-favorite-star-wars-movies-and-least-favorite-characters/)
 
