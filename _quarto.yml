@@ -9,6 +9,9 @@ project:
     - "!/Workbooks/Archive"
   type: website
 
+resources:
+  - Data/**
+  
 website:
   title: "DS 250"
   favicon: Images/favicon.png

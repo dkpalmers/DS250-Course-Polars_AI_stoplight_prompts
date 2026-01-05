@@ -35,7 +35,7 @@ __Information:__ [Data description](https://github.com/byuidatascience/data4dwel
 
 - [All regressor algorithms in scikit-learn](https://www.kaggle.com/code/grigol1/all-regression-models-55-sklearn-models) (skim)
 - [How to choose a good evaluation metric for your Machine learning model](https://web.archive.org/web/20240213170741/https://ranvir.xyz/blog/how-to-evaluate-your-machine-learning-model-like-a-pro-metrics/) (you can start in section 11 - Evaluating for regression problems)
-- [Polars User Guide, Joins](https://docs.pola.rs/user-guide/transformations/joins/) (we will only be doing equi joins. So, anything after the summaries of the various join strategies is optional).
+- Optional Review: [Polars User Guide, Joins](https://docs.pola.rs/user-guide/transformations/joins/) 
 
 Optional/Alternative Reading
 
