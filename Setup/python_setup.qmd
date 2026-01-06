@@ -18,6 +18,7 @@ keywords: [""]
 First we need to confirm you dont already have python installed. Open a command prompt (win) or terminal (mac) and type `python --version` or `python3 --version`. If you see a version number, you already have python installed. If you see an error message, you need to install python. If the version you have is not the same as the one listed below you will still want to uninstall and install the correct version.
 
 How to uninstall python on windows:
+
 - Open the `Control Panel`
 - Click on `Programs`
 - Click on `Programs and Features`
@@ -25,6 +26,7 @@ How to uninstall python on windows:
 - Right click on `Python` or click on the ... and select `Uninstall`
 
 How to uninstall python on mac:
+
 - If it is python 3.10 or higher you should be fine to uninstall it. 
 - Make sure it has a folder in your applications folder before uninstalling. 
 - To uninstall simply drag the python folder to the trash.
@@ -33,15 +35,12 @@ How to uninstall python on mac:
 
 We need to download and install the latest version of python approved for this course. (__Python 3.13__) We do not reccomend installing Python 3.14 at this time as the libraries have not had enought time to update to the changes from 3.13 --> 3.14. 
 
-__Note:__ [***do not***] install python from `VS Code` or the `Microsoft Store` or `Anaconda`
+__Note:__ ***do not*** install python from `VS Code` or the `Microsoft Store` or `Anaconda`
 Python.org is the _only_ place you should install VS Code from (link below)
+__Note:__ If you are using **Windows**, make sure to check the box that says `Add Python to PATH` before clicking `Install Now`. Sometimes it is phrased as `Add Python to environment variables`. Failture to do so will cause issues with the `quarto` install process.
 
 - [Python](https://python.org/downloads)
 
-
-#### Install Python on Windows
-Make sure to check the box that says `Add Python to PATH` before clicking `Install Now`. Sometimes it is phrased as `Add Python to environment variables`. Failture to do so will cause issues with the `quarto` install process.
-![](/images/python_env_var.png){width=400}
 
 
 #### Continue to Install Python Libraries
