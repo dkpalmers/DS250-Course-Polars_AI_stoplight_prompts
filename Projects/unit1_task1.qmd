@@ -62,7 +62,6 @@ __Download this [Unit 1 Task 1](../Templates/unit1_task1_template.qmd) template.
 1. __What was the earliest year that the name ‘Felisha’ was used?__  
 1. __What year had the most babies named 'David'? How many babies were named 'David' that year?__  
 1. __What year did your name hit its peak? How many babies were named your name in that year?__
-1. __How many babies are named ‘Oliver’ in the state of Utah for all years?__
 1. __In the most recent year of data, what was the most common female name in Utah?__   
 
 ### Submission:
