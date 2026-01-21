@@ -65,7 +65,7 @@ Polars Cookbook
 
 ### Submission / Deliverables:
 
-_Use this [unit3_task1_template](../Templates/unit3_task1_template.qmd) to create your Client Report. Answer the questions. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
+_Use this [unit2_task1_template](../Templates/unit2_task1_template.qmd) to create your Client Report. Answer the questions. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
 
 ::: {.callout-note collapse="true"}
 Your instructor will advise you, or it will be evident in Canvas, whether to submit an rendered .html file, or a link to the rendered file on GitHub on gh-pages. (Do not submit the URL to the GitHub `.qmd` file)  
