@@ -32,12 +32,14 @@ __Subject Matter:__ [Types of Delay](https://aspm.faa.gov/aspmhelp/index/Types_o
 ### Readings
 - Python Polars: The Definitive Guide, [Chapter 6, Reading JSON and NDJSON](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch06.html#id480)
 - Polars Users Guide, [Using pl.when](https://docs.pola.rs/user-guide/expressions/basic-operations/#conditionals)
+- Polars Cookbook
+    - Chapter 1 Getting Started with Python Polars
 
-Polars Cookbook
-- Chapter 1 Getting Started with Python Polars
-    - [Creating, modifying, and deleting columns](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-46)
-    - [Understanding method chaining](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-59)
-    - REVIEW [Selecting columns and filtering data](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-47)
+        - [Creating, modifying, and deleting columns](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-46)
+
+        - [Understanding method chaining](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-59)
+
+        - REVIEW [Selecting columns and filtering data](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-47)
 
 #### Optional Alternative References
 - Polars Cookbook, [Chapter 2, Reading and writing JSON files](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_02.xhtml#_idParaDest-88)
