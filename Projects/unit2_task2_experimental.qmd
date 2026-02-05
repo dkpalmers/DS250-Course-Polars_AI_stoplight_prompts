@@ -35,8 +35,8 @@ __Subject Matter:__ [Types of Delay](https://aspm.faa.gov/aspmhelp/index/Types_o
 Polars Cookbook
 - Chapter 4 Data Transformation Techniques
 
-    - [Exploring basic aggregation](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_04.xhtml#_idParaDest-151)
-    - [using group by aggregation](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_04.xhtml#_idParaDest-158)
+ [Exploring basic aggregation](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_04.xhtml#_idParaDest-151)   
+ [Using group by aggregation](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_04.xhtml#_idParaDest-158)
 
 
 Optional/alternative reading:
