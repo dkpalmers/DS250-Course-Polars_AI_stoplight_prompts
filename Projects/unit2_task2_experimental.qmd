@@ -50,7 +50,7 @@ Polars User Guide, [Getting Started: Expressions and Context](https://docs.pola.
 
 ### Questions
 
-1. __Calculate the sample size (i.e. number of observations) for each airport in each year__. What do you notice?
+1. __Calculate the sample size (i.e. number of rows in the dataset) for each airport in each year__. What do you notice?
 
 1. __Which airport has the worst delays?__ Describe the metric you chose, and why you chose it to determine the “worst” airport. Your answer should include a summary table that lists (for each airport) the total number of flights, total number of delayed flights, proportion of delayed flights, and average delay time in hours. 
 

@@ -82,7 +82,7 @@ Download the [Unit 3 Task 2 Template](../Templates/unit3_task2_template.qmd). No
 
 1. __Use the same query as above, but only include players with at least 10 at bats that year. Print the top 5 results.__  
 
-1. __Now calculate the batting average for players over their entire careers (all years combined). Only include players with at least 100 at bats over their entire career, and print the top 5 results.__
+1. __Now modify the SQL query to calculate the batting average for players over their entire careers (all years combined). Only include players with at least 100 at bats over their entire career, and print the top 5 results.__
 
 
 ### Submission:

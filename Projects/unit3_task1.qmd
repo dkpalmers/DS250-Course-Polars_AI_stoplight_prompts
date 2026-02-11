@@ -52,11 +52,15 @@ Python Polars the Definitive Guide: Cahpter 6, [Querying Databases](https://lear
 [The SELECT and FROM Clauses](https://docs.data.world/documentation/sql/concepts/basic/SELECT_and_FROM.html) 
 
 Review Polars Cookbook as Needed
+
 - Chapter 1 Getting Started with Python Polars
+
     - [Creating, modifying, and deleting columns](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-46)
     - [Understanding method chaining](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-59)
     - REVIEW [Selecting columns and filtering data](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-47)
+
 - Chapter 4 Data Transformation Techniques
+
     - [Exploring basic aggregation](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_04.xhtml#_idParaDest-151)
     - [using group by aggregation](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_04.xhtml#_idParaDest-158)
 
@@ -76,11 +80,11 @@ Polars User Guide, [Getting Started: Expressions and Context](https://docs.pola.
 
 Download the [Unit 3 Task 1 Template](../Templates/unit3_task1_template.qmd).
 
-1. __Write an SQL query that pull in the batting table. Then, with Python Polars code create a dataframe that contains playerID, yearID, and batting average. Sort the dataframe from highest batting average to lowest, and then by playerid alphabetically. Show the top 5 results in your report.__
+1. __Use an SQL query to pull in the batting table. Then, with Python Polars calculate the total number of at bats and the batting average for each year a player played. Then, filter the data frame to only include rows in which the player had at least 10 at bats that year. Sort the dataframe from highest batting average to lowest, and then by playerid alphabetically. Show the top 5 results in your report.__
 
-1. __Do the same analysis as above, but now only include players with at least 10 at bats that year. Print the top 5 results.__
+Note: A batting average is meant to measure how often a player puts the ball in play and gets to base safely. For this task, use a simplified version of batting average defined as the sum of hits (labeled 'H') divided by number of at bats (labeled 'AB').
 
-1. __Write an SQL query that pulls in the batting table. Then, with Python Polars calculate the batting average for each player over their entire career (all years combined). Only include players with at least 100 at bats over their entire career. Sort the dataframe from highest batting average to lowest, and then by playerid alphabetically. Show the top 5 results in your report.__ 
+1. __Use an SQL query to pull in the batting table. Then, with Python Polars calculate the batting average for each player over their entire career (all years combined). Only include players with at least 100 at bats over their entire career. Sort the dataframe from highest batting average to lowest, and then by playerid alphabetically. Show the top 5 results in your report.__ 
 
 
 ### Submission:
