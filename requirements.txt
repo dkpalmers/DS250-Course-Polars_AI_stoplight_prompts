@@ -1,0 +1,17 @@
+jupyter
+numpy
+polars
+pandas
+scikit-learn
+lets-plot
+palmerpenguins
+plotly
+seaborn
+altair
+altair_viewer
+tabulate
+nbformat
+nbclient
+kaleido==0.2.1
+skimpy
+matplotlib
