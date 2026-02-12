@@ -16,8 +16,8 @@ website:
   title: "DS 250"
   favicon: Images/favicon.png
   back-to-top-navigation: true
-  issue-url: https://github.com/byuistats/DS250-Course/issues/new
-  repo-url: https://github.com/byuistats/DS250-Course
+  issue-url: https://byuidatascience.github.io/DS250-Course-Polars/issues/new
+  repo-url: https://byuidatascience.github.io/DS250-Course-Polars/
   repo-actions: [issue]
   
   # [layout](https://quarto.org/docs/output-formats/page-layout.html)
