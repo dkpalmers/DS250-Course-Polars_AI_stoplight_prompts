@@ -105,34 +105,34 @@ website:
         file: faq.qmd
       
   sidebar:
-    - title: "Projects"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Projects"
-          file: projects.qmd
-        - text: "---"
-        - text: "Project 0: Introduction"
-          file: Projects/project_0.qmd
-        - text: "---"
-        - text: "Project 1: What's in a Name?"
-          file: Projects/project_1.qmd
-        - text: "---"
-        - text: "Project 2: Finding Relationships in Baseball"
-          file: Projects/project_2.qmd
-        - text: "---"
-        - text: "Project 3: Late Flights and Missing Data (JSON)"
-          file: Projects/project_3.qmd
-        - text: "---"
-        - text: "Project 4: Can You Predict That?"
-          file: Projects/project_4.qmd
-        - text: "---"
-        - text: "Project 5: The War with Star Wars"
-          file: Projects/project_5.qmd
-        - text: "---"
-        - text: "Project 6: Git Your Portfolio Online"
-          file: Projects/project_6.qmd
-        - text: "---"
+    # - title: "Projects"
+    #   style: "docked"
+    #   background: light
+    #   contents:
+    #     - text: "Projects"
+    #       file: projects.qmd
+    #     - text: "---"
+    #     - text: "Project 0: Introduction"
+    #       file: Projects/project_0.qmd
+    #     - text: "---"
+    #     - text: "Project 1: What's in a Name?"
+    #       file: Projects/project_1.qmd
+    #     - text: "---"
+    #     - text: "Project 2: Finding Relationships in Baseball"
+    #       file: Projects/project_2.qmd
+    #     - text: "---"
+    #     - text: "Project 3: Late Flights and Missing Data (JSON)"
+    #       file: Projects/project_3.qmd
+    #     - text: "---"
+    #     - text: "Project 4: Can You Predict That?"
+    #       file: Projects/project_4.qmd
+    #     - text: "---"
+    #     - text: "Project 5: The War with Star Wars"
+    #       file: Projects/project_5.qmd
+    #     - text: "---"
+    #     - text: "Project 6: Git Your Portfolio Online"
+    #       file: Projects/project_6.qmd
+    #     - text: "---"
 
     # - title: "Book Time"
     #   contents:
@@ -212,59 +212,59 @@ website:
           file: Syllabus/competency.qmd
         - text: "---"
 
-    - title: "Workbooks"
-      contents:
-        - text: "Course Workbooks"
-          file: workbooks.qmd
-        - text: "---"
-        - text: "Project 0"
-          file: Workbooks/wb0.qmd
-        - text: "---"
-        - text: "Project 1"
-          file: Workbooks/wb1.qmd
-        - text: "---"
-        - text: "Project 2"
-          file: Workbooks/wb2.qmd
-        - text: "---"
-        - text: "Project 3"
-          file: Workbooks/wb3.qmd
-        - text: "---"
-        - text: "Project 4"
-          file: Workbooks/wb4.qmd
-        - text: "---"
-        - text: "Project 5"
-          file: Workbooks/wb5.qmd
-        - text: "---"
-        - text: "Project 6"
-          file: Workbooks/wb6.qmd
-        - text: "---"
+    # - title: "Workbooks"
+    #   contents:
+    #     - text: "Course Workbooks"
+    #       file: workbooks.qmd
+    #     - text: "---"
+    #     - text: "Project 0"
+    #       file: Workbooks/wb0.qmd
+    #     - text: "---"
+    #     - text: "Project 1"
+    #       file: Workbooks/wb1.qmd
+    #     - text: "---"
+    #     - text: "Project 2"
+    #       file: Workbooks/wb2.qmd
+    #     - text: "---"
+    #     - text: "Project 3"
+    #       file: Workbooks/wb3.qmd
+    #     - text: "---"
+    #     - text: "Project 4"
+    #       file: Workbooks/wb4.qmd
+    #     - text: "---"
+    #     - text: "Project 5"
+    #       file: Workbooks/wb5.qmd
+    #     - text: "---"
+    #     - text: "Project 6"
+    #       file: Workbooks/wb6.qmd
+    #     - text: "---"
         
-    - title: "Skill Builders"
-      contents:
-        - text: "Skill Builders"
-          file: skill_builders.qmd
-        - text: "---"
-        - text: "Project 0: Introduction"
-          file: Skill Builders/introduction.qmd
-        - text: "---"
-        - text: "Project 1: Pandas and LetsPlot"
-          file: Skill Builders/pandas_letsplot.qmd
-        - text: "---"
-        - text: "Project 2: JSON & Missing"
-          file: Skill Builders/json_missing.qmd
-        - text: "---"
-        - text: "Project 3: SQL & Databases"
-          file: Skill Builders/relational_data.qmd
-        - text: "---"
-        - text: "Project 4: Machine Learning"
-          file: Skill Builders/ml_sklearn.qmd
-        - text: "---"
-        - text: "Project 5: Munging Data"
-          file: Skill Builders/munging.qmd
-        - text: "---"
-        - text: "Project 6: GitHub and Git"
-          file: Skill Builders/git_github.qmd
-        - text: "---"
+    # - title: "Skill Builders"
+    #   contents:
+    #     - text: "Skill Builders"
+    #       file: skill_builders.qmd
+    #     - text: "---"
+    #     - text: "Project 0: Introduction"
+    #       file: Skill Builders/introduction.qmd
+    #     - text: "---"
+    #     - text: "Project 1: Pandas and LetsPlot"
+    #       file: Skill Builders/pandas_letsplot.qmd
+    #     - text: "---"
+    #     - text: "Project 2: JSON & Missing"
+    #       file: Skill Builders/json_missing.qmd
+    #     - text: "---"
+    #     - text: "Project 3: SQL & Databases"
+    #       file: Skill Builders/relational_data.qmd
+    #     - text: "---"
+    #     - text: "Project 4: Machine Learning"
+    #       file: Skill Builders/ml_sklearn.qmd
+    #     - text: "---"
+    #     - text: "Project 5: Munging Data"
+    #       file: Skill Builders/munging.qmd
+    #     - text: "---"
+    #     - text: "Project 6: GitHub and Git"
+    #       file: Skill Builders/git_github.qmd
+    #     - text: "---"
 
     # - title: "FAQ"
     #   contents:
