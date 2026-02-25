@@ -1,7 +1,8 @@
 on:
   workflow_dispatch:
   push:
-    branches: main
+    branches: 
+      - main
 
 name: Quarto Publish
 
@@ -12,7 +13,7 @@ jobs:
       contents: write
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -21,13 +22,13 @@ jobs:
           tinytex: true 
 
       - name: Install Python and Dependencies
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13'
           #cache: 'pip'
-      - run: pip install jupyter numpy polars pandas scikit-learn lets-plot palmerpenguins plotly.express seaborn altair altair_viewer tabulate nbformat nbclient kaleido skimpy matplotlib
-      #- run: pip install -r requirements.txt
-      #- run: pip install jupyter numpy pandas scikit-learn tabulate altair altair_viewer nbformat nbclient plotly.express
+      - run: pip install -r requirements.txt
+      #- run: pip install jupyter numpy polars pandas scikit-learn lets-plot palmerpenguins plotly.express seaborn altair altair_viewer tabulate nbformat nbclient kaleido skimpy matplotlib
+            #- run: pip install jupyter numpy pandas scikit-learn tabulate altair altair_viewer nbformat nbclient plotly.express
 
       # Comment out the 2 below section if you are not using R
       # - name: Install R

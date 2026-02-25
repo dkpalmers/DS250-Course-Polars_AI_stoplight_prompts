@@ -27,7 +27,7 @@ Markdown is a plain text formatting syntax aimed at making writing more accessib
 
 ### Quarto Basics
 
-You will need to install the Quarto CLI and then go through the VS Code directions on using Quarto with Python.
+You will need to install the `Quarto CLI` **and** install the VS Code Quarto Extension. (more on this in the VS Code setup section)
 
 1. Install [Quarto CLI](https://quarto.org/docs/get-started/)
 <!-- 1. Install [QUARTO VS Code Extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
