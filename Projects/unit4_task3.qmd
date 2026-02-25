@@ -33,24 +33,20 @@ __Information:__ [Data description](https://github.com/byuidatascience/data4dwel
 
 ### Readings
 
-No new readings. Consider reviewing the past readings as needed:
-
-#### Optional References
-
+A scan of these articles can be helpful, or find your own resources on the web.
 
 - [Pros and cons of popular classifiers](https://www.geeksforgeeks.org/comprehensive-guide-to-classification-models-in-scikit-learn/) 
 - [Another overview and description of pros and cons for popular classifiers and regression models](https://www.geeksforgeeks.org/supervised-machine-learning/)
 - [Decision Tree Classification in Python](https://www.datacamp.com/community/tutorials/decision-tree-classification-python)    
 - [Boosted algorithms in scikit-learn](https://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting)
 - [scikit-plot package](https://github.com/reiinakano/scikit-plot)  
-
  
 
 ### Questions
 
-1. __Create 2-3 charts that evaluate the relationships between each of the top 2 or 3 most important variables (as found in Unit 4 Task 2) and the year the home was built.__ Describe what you learn from the charts about how that variable is related to year built. 
+1. Repeat the classification exercise using 2 different algorithms/models. Explain the differences between the models.
 
-2. __Create at least one other chart to examine a variable(s) you thought might be important but apparently was not. The chart should show its relationship to the year built.__ Describe what you learn from the chart about how that variable is related to year built. Explain why you think it was not (very) important in the model.
+1. For each model (your original one, and the 2 new ones for this task), display the classification report and the permutation importances for the most important features.  Discuss which model you would recommend to the Client and why.
 
 
 

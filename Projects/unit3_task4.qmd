@@ -45,10 +45,10 @@ The table(s) you choose to solve the problem with may lead you down different co
 
 Identify the top 10 players with the longest Major League Baseball careers. Include their:
 
-playerID
-first_name
-last_name
-career_length
+- playerID
+- first_name
+- last_name
+- career_length
 
 ### Question 2
 
@@ -56,14 +56,14 @@ career_length
 
 Include the following columns:
 
-    - position
-    - average_salary
-    - total_players
-    - highest_salary
+- position
+- average_salary
+- total_players
+- highest_salary
 
 The highest_salary column should display the highest salary ever earned by a player in that position.
 
-- Additionally, create a new column called salary_category using a case statement:
+- Additionally, add a new column to the summary table you just created to label the average salary:
 
     - If the average salary is above $3 million, categorize it as “High Salary.”
     - If the average salary is between $2 million and $3 million, categorize it as “Medium Salary.”

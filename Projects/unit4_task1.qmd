@@ -48,9 +48,8 @@ __Information:__ [Data description](https://github.com/byuidatascience/data4dwel
 
 ### Questions
 
-1. __Take time to get to know your data.__ Based on some initial exploration, identify 3 variables in the dataset you think will have the best predictive ability for determining if a house was built before 1980. Explain/justify the reasoning behind your guess.
+1. __Take time to get to know your data.__ Based on some initial exploration, identify 3 variables in the dataset you think will have strong predictive ability for determining if a house was built before 1980. Explain/justify the reasoning behind your guesses (for example with plots).
 
-Also, identify 3 variables you think will ultimately be very unimportant to the task at hand. Also explain why
 
 1. __Build a classification model labeling houses as being built “before 1980” or “during or after 1980”.__ Your goal is to reach or exceed 90% accuracy. Report your final model choice and any other model parameters you may have tweaked (train-test split ratio, tuning parameters, etc).  
 

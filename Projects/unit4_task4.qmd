@@ -49,8 +49,6 @@ Optional/Alternative Reading
  
 ### Questions
 
-1. __Repeat the classification exercise using 3 different models or algorithms.__ Display their Permutation Importance and Classification Report. Explainn the differences between the models and which one you would recommend to the Client.  
-
 1. __Join the `dwellings_neighborhoods_ml.csv` data to the `dwelling_ml.csv` on the `parcel` column to create a new dataset. Duplicate the code for the model you recommended in the stretch question above and update it to use this data.__ Explain the differences and if this changes the model you recomend to the Client.  
 
 1. __Can you build a model that predicts the year a house was built?__ Note this is a regression ML model, not a classifier. Report appropriate evaluation metrics for the model. Explain the model and the evaluation metrics you used to determine if the model is good.

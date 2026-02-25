@@ -49,9 +49,11 @@ __Information:__ [Data description](https://github.com/byuidatascience/data4dwel
 
 ### Questions
 
-1. __Describe the quality of your classification model using 2-3 different evaluation metrics.__ You also need to explain how to interpret each of the evaluation metrics you use.  
+1. __Describe the quality of your classification model using 2-3 different evaluation metrics.__ You also need to explain how to define/interpret each of the evaluation metrics you use.  
 
-1. __Justify your classification model by discussing the most important features selected by your model.__ This discussion should include a permutation importance chart of the most important features, and a description of those features.  
+1. __Justify your classification model by discussing the most important features selected by your model.__ This discussion should include a plot of permutation importance values for the most important features. Were there any features you thought would be importance but weren't?
+
+1. __For the 3 most important features, explain their relationship to the target variable. Use a plot to illustrate the relationship.__ (3 plots minimum)
 
 
 
