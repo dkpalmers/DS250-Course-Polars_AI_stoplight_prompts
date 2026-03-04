@@ -44,7 +44,7 @@ A scan of these articles can be helpful, or find your own resources on the web.
 
 ### Questions
 
-1. Repeat the classification exercise using 2 different algorithms/models. Explain the differences between the models.
+1. __Repeat the classification exercise using 2 different algorithms/models. Explain the differences between the 3 models__ (your original one, and the 2 new ones for this task).
 
 1. For each model (your original one, and the 2 new ones for this task), display the classification report and the permutation importances for the most important features.  Discuss which model you would recommend to the Client and why.
 
