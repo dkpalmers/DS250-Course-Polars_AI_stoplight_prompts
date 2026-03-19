@@ -53,7 +53,7 @@ __Information:__ [Article](https://fivethirtyeight.com/features/americas-favorit
 
 2. __Remake the respondent names from the email column. Show the first 5 rows of the result.__ Each respondentID has a unique email they used to submit their survey. We can see that each of the emails have a different format for their names. 
 
-    Use regex to create a first name column, a last name column, and a email_domain column to your data set for each row. Show the first 5 rows of the result (you don't have to show all the columns, just the email, first_name, last_name, and email_domain).
+    Use regex to create a first name column, a last name column, and a email domain column to your data set for each row. Show the first 5 rows of the result (you don't have to show all the columns, just the email, first name, last name, and email domain).
 
     This table should be placed either in the the Methods section or an Appendix of the report submitted for this unit (see below).
 

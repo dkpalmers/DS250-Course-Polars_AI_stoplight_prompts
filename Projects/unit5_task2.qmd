@@ -42,12 +42,12 @@ No new readings. Apply the new concepts in this unit and review/practice concept
 
 1. __Filter the dataset to 835 respondents that have seen at least one film__ (Hint: Don’t use the column `Have you seen any of the 6 films in the Star Wars franchise?`)
 
-1. __Clean and format the data so that it can be used in a machine learning model.__ As you format the data, you should complete each item listed below. In your final report provide an excerpt of the reformatted data with a short description of the changes made.  
+1. __*Begin* to clean and format the data so that it can be used in a machine learning model.__ As you format the data, you should complete each item listed below. In your final report provide an excerpt of the reformatted data with a short description of the changes made.  
 
-    a. Create a new column that converts the age ranges to a single number. Drop the age range categorical column  
-    a. Create a new column that converts the education groupings to a single number. Drop the school categorical column  
-    a. Create a new column that converts the income ranges to a single number. Drop the income range categorical column  
-    a. Encode favorability ratings as a number. Remove the favorability categorical columns.
+    a. Create a new column that converts the age ranges to a number. Remove the original age range categorical column  
+    a. Create a new column that converts the education groupings to a number. Remove the original school categorical column  
+    a. Create a new column that converts the income ranges to a number. Remove the original income range categorical column  
+    a. Create a new column that converts favorability ratings to a number. Remove the original favorability categorical columns.
 
 
 ### Submission / Deliverables:

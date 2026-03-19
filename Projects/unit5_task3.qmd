@@ -42,10 +42,11 @@ __Information:__ [Article](https://fivethirtyeight.com/features/americas-favorit
 
 1. __Finish prepping the data for machine learning:__
 
-    a. One-hot encode all remaining categorical columns 
+    a. Drop the RespondentID column, first and last name columns, and email column
+    a. One-hot encode all remaining non-numeric columns 
     a. Create your target (also known as “y” or “label”) column to indicate whether a person had a Household Income $50,000 or greater  
 
-1. __Build a machine learning model that predicts whether a person had a Household Income $50,000 or greater with at least 65% accuracy. Describe your model and report the accuracy.__
+1. __Build a machine learning model that predicts whether a person had a Household Income $50,000 or greater with at least 55% accuracy. Describe your model and report the accuracy.__
 
 
 ### Submission / Deliverables:
