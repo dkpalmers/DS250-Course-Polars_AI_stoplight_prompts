@@ -37,6 +37,7 @@ __Information:__ [Data description](https://github.com/byuidatascience/data4dwel
 - [A visual introduction to machine learning](https://narrative-flow.github.io/exploratory-study-2/)
 - [Calculate model accuracy in scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html)
 - [A few popular models to choose from, and a review of Machine Learning workflow](https://www.educative.io/blog/scikit-learn-cheat-sheet-classification-regression-methods)
+- [Exhaustive list of classifiers in scikit-Learn](https://www.kaggle.com/code/grigol1/all-classification-models-40-sklearn-models) (skim)
 
 
 #### Optional References
@@ -51,7 +52,7 @@ __Information:__ [Data description](https://github.com/byuidatascience/data4dwel
 1. __Take time to get to know your data.__ Based on some initial exploration, identify 3 variables in the dataset you think will have strong predictive ability for determining if a house was built before 1980. Explain/justify the reasoning behind your guesses (for example with plots).
 
 
-1. __Build a classification model labeling houses as being built “before 1980” or “during or after 1980”.__ Your goal is to reach or exceed 90% accuracy. Report your final model choice and any other model parameters you may have tweaked (train-test split ratio, tuning parameters, etc).  
+1. __Build a classification model labeling houses as being built “before 1980” or “during or after 1980”.__ Your goal is to get 91% accuracy, or higher. Report your final model choice and any other model parameters you may have tweaked (train-test split ratio, tuning parameters, etc).  
 
 ### Submission / Deliverables:
 

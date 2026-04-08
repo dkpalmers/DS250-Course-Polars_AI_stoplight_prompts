@@ -34,9 +34,12 @@ __Information:__ [Data description](https://github.com/byuidatascience/data4dwel
 ### Readings
 
 - [How to choose a good evaluation metric for your Machine learning model](https://web.archive.org/web/20240213170741/https://ranvir.xyz/blog/how-to-evaluate-your-machine-learning-model-like-a-pro-metrics/)
+- [Deciding which features to include in your model](https://www.linkedin.com/pulse/feature-selection-dimensionality-reduction-ajay-taneja/)
+- [Feature Importances](https://www.geeksforgeeks.org/machine-learning/how-to-generate-feature-importance-plots-from-scikit-learn/)
+- [Feature Importances Documentation](https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html)
 - [Permutation Importance](https://scikit-learn.org/stable/modules/permutation_importance.html)
 - [Permutation Importance Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance)
-- [Exhaustive list of classifiers in scikit-Learn](https://www.kaggle.com/code/grigol1/all-classification-models-40-sklearn-models) (skim)
+
 
 
 #### Optional References
@@ -51,7 +54,7 @@ __Information:__ [Data description](https://github.com/byuidatascience/data4dwel
 
 1. __Describe the quality of your classification model using 2-3 different evaluation metrics.__ You also need to explain how to define/interpret each of the evaluation metrics you use.  
 
-1. __Justify your classification model by discussing the most important features selected by your model.__ This discussion should include a plot of permutation importance values for the most important features. Were there any features you thought would be importance but weren't?
+1. __Justify your classification model by discussing the most important features selected by your model.__ This discussion should include a plot of importance values for the most important features. Were there any features you thought would be importance but weren't?
 
 1. __For the 3 most important features, explain their relationship to the target variable. Use a plot to illustrate the relationship.__ (3 plots minimum)
 

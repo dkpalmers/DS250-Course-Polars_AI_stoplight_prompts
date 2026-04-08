@@ -71,7 +71,7 @@ The highest_salary column should display the highest salary ever earned by a pla
 
 - Order the table by average salary in descending order.
 
-__Hint__: Beware, it is common for a player to play multiple positions in a single year. For this analysis, each player’s salary should only be counted toward one position in a given year. You get to determine which position to count it towards.
+__Hint__: Beware, it is common for a player to play multiple positions in a single year. For this analysis, each player’s salary should only be counted toward one position in a given year. You get to determine which position to count it towards. **Explain how you decided which position a player's salary should be counted toward in those situations, and why that is a good approach.**
 
 ### Submission:
 ::: {.callout-note collapse="true"}
