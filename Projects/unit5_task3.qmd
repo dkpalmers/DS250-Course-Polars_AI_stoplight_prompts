@@ -35,7 +35,8 @@ __Information:__ [Article](https://fivethirtyeight.com/features/americas-favorit
 
 ### Readings
 
-- [Dummy encoding](https://docs.pola.rs/api/python/stable/reference/dataframe/api/polars.DataFrame.to_dummies.html)
+- [One Hot Encoding Example](https://datasensei.medium.com/how-to-transform-nominal-data-for-ml-with-onehotencoder-from-scikit-learn-f6febfefb3c6)
+- [Why get_dummies is a bad idea for your ML project](https://digestize.medium.com/why-is-using-get-dummies-a-bad-idea-for-your-ml-project-bcfd2683d2e4)
 - Skim Python Polars: The Definitive Guide, [Chapter 14, Vertical and Horizontal Stacking](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch14.html#id181)sections
 
 ### Questions
