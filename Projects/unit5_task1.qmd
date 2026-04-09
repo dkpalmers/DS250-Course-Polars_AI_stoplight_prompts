@@ -22,9 +22,9 @@ Most of the data cleaning has been done for you, but there is still some data pr
 
 The Client is who performed the survey but outsourced the analitics to a 3rd party (you). They want you to clean up the data so you can: 
 
-    a. Extract the names of respondents and their email info
-    a. Validate the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article
-    a. Predict if a person from the survey makes at least $50k
+- Extract the names of respondents and their email info
+- Validate the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article
+- Predict if a person from the survey makes at least $50k
 
 
 ### Data
