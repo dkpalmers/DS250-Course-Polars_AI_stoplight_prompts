@@ -29,6 +29,7 @@ Use these links to install the VS Code Extensions. Note: ***DO NOT*** install py
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Quarto](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
+- [Data Wrangler](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.datawrangler)
 
 
 ### Learn More About VS Code
@@ -36,4 +37,4 @@ Use these links to install the VS Code Extensions. Note: ***DO NOT*** install py
 
 
 ### Continue to Install Quarto
-[Quarto](/Setup/quarto_setup.qmd)
+[Python Libraries](/Setup/python_lib.qmd)

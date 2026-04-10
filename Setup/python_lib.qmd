@@ -56,4 +56,4 @@ We want to install the following packages;
 [Python](/Course%20Materials/python.qmd) 
 
 #### Continue to Install VS Code
-[Install VS Code](/Setup/vs_code_setup.qmd)
+[Quarto](/Setup/quarto_setup.qmd)

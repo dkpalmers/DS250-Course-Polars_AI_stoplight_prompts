@@ -154,11 +154,11 @@ website:
         - text: "Python"
           file: Setup/python_setup.qmd
         - text: "---"
-        - text: "Python Libraries"
-          file: Setup/python_lib.qmd
-        - text: "---"
         - text: "VS Code"
           file: Setup/vs_code_setup.qmd
+        - text: "---"
+        - text: "Python Libraries"
+          file: Setup/python_lib.qmd
         - text: "---"
         - text: "Quarto"
           file: Setup/quarto_setup.qmd
