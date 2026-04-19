@@ -18,8 +18,8 @@ keywords: [""]
 #### Do you already have Python installed?
 First we need to confirm you dont already have python installed. Open a command prompt (win) or terminal (mac) and type `python --version` or `python3 --version`. If you see a version number, you already have python installed. If you see an error message, you need to install python. If the version you have is not the same as the one listed below you will still want to uninstall and install the correct version.
 
-#### Install this specific version of Python 3.13
-We need to download and install `this specific version` of python approved for this course. (__Python 3.13__) We do not reccomend installing Python 3.14 at this time as the libraries have not had enought time to update to the changes from 3.13 --> 3.14. 
+#### Install this specific version of Python 3.14
+We need to download and install `this specific version` of python approved for this course. (__Python 3.14__) We can now recommend 3.14 as Lets-Plot is now compatible with it. We will be using the `python 3.14` version for this course. You can have multiple versions of python installed on your computer but we will be using `python 3.14` for this course.
 
 __Note:__ ***do not*** install python from `VS Code` or the `Microsoft Store` or `Anaconda`
 Python.org is the _only_ place you should install VS Code from (link below)
