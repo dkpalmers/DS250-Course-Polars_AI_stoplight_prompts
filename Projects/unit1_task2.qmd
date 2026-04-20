@@ -1,5 +1,5 @@
 ---
-title: "Unit 1 Task 2: Famous Names and You"
+title: "Unit 1 Core Task 2: Famous Names and You"
 date: 2025-10-24
 lastmod: 2025-10-24
 weight: 2
@@ -7,6 +7,12 @@ draft: false
 # search related keywords
 keywords: [""]
 ---
+
+::: {.callout-note}
+**Canvas:** W03 U1: Core Task 2 — Famous Names and You  
+**Type:** Core Task (1 pt, complete/incomplete)  
+**Copilot:** Allowed for syntax lookup; disallow for answer generation.
+:::
 
 ### Background
 
@@ -24,7 +30,7 @@ This csv file contains the number of times a name was given to a child in a spec
 
 ### Data
 
-Every data science project should start with data, and our class projects are no different. Each project will have __'URL'__ and __'Information'__ links like the ones below. Right click the __'URL'__ link and select "Copy Link". You can use that copied URL in your code to read in the data. This is the preferred method to get data into your report as you will be publishing your report to GitHub. If you choose to download the data file to your computer you will need to save it in the same folder as your quarto file for the assignment in order for it to work correclty in GitHub. 
+Every data science project should start with data, and our class projects are no different. Each project will have __'URL'__ and __'Information'__ links like the ones below. Right click the __'URL'__ link and select "Copy Link". You can use that copied URL in your code to read in the data. This is the preferred method to get data into your report as you will be publishing your report to GitHub. If you choose to download the data file to your computer you will need to save it in the same folder as your quarto file for the assignment in order for it to work correctly in GitHub. 
 
 
 __URL:__ [names_year_csv.csv](https://posit.byui.edu/content/0d43d66f-d3b7-4c43-8c36-52e3ed69e7f1/names_year_csv.csv)   
@@ -51,7 +57,10 @@ __Optional Readings:__
 - [P4DS: Rest of Chapter 14](https://aeturrell.github.io/python4DS/communicate-plots.html#scales)
 
 
-### Questions and Tasks (Core)
+### Core Questions
+
+
+**Skills:** `filter`, `sort`, ranking by count
 
 __Download this [Unit 1 Task 2 Template](../Templates/unit1_task2_template.qmd) template. The answer to each question should include a chart **and** a written response. The years labels on your charts should not include a comma. At least **one** of your charts must include reference marks.__    
 
@@ -61,25 +70,7 @@ __Download this [Unit 1 Task 2 Template](../Templates/unit1_task2_template.qmd) 
 
 ### Submission:
 
-::: {.callout-note collapse="false"}
-When you have completed the report, you will need to follow this process to submit your work:
-
-1. Have the `Unit1_Task2` template open in VS Code and nothing else
-1. Click `Preview Button` in VS Code in the top right of the screen
-    a. This will render the file but also the entire course work portfolio into `HTML` files for review
-    b. Confirm everything displays as you would like it to
-    c. How you see it will be how it is viewed for grading
-    d. If there is an error in any cell of the quarto files, the rendering will stop and you will need to fix the error before rendering again (if you get stuck post your error in Slack)
-1. Once the report is confirmed close the preview and open a VS Code `Terminal`
-    a. click `Terminal` in the top menu bar and then `New Terminal`
-1. Type the following in the terminal `quarto render `
-    a. Then drag and drop `unit1_task2.qmd` into the terminal, this will add the file path to the terminal command
-    a. Press Enter
-1. This will render the project into a `HTML` file in the same location as the `.qmd` file
-1. To locate the file in VS Code
-    a. Right click on the file in the file explorer and select `Reveal in File Explorer`(Win) or `Reveal in Finder`(Mac)
-1. Upload `HTML` file into Canvas
-:::
+{{< include ../_submission_html.qmd >}}
 
 
 ### Deliverables:

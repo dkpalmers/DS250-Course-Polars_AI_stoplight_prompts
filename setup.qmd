@@ -37,7 +37,7 @@ Using Copilot (AI)?
 
 >Copilot is a micro-assistant that helps you write better code. It is a VS Code extension that uses AI built off Chat GPT. With your student GitHub account, you can use Copilot for free. It helps you write code faster and with fewer errors. It is not perfect, but it is a great tool to help you learn to code.
 
->This course is designed with a Core and Stretch for each project. It is expected that you acomplish the Core __**without**__ the use of Copilot. The Stretch is where you __**should**__ use Copilot. Without using Copilot, the stretch questions will be more challenging. The goal is to help you learn to code and to use Copilot as a tool to help you learn, not to do the work for you.
+>This course is designed with a Core and Stretch for each project. It is expected that you accomplish the Core __**without**__ the use of Copilot. The Stretch is where you __**should**__ use Copilot. Without using Copilot, the stretch questions will be more challenging. The goal is to help you learn to code and to use Copilot as a tool to help you learn, not to do the work for you.
 
 11. Install [GitHub Copilot](/Setup/copilot_setup.qmd) (required for Stretch Questions)
 

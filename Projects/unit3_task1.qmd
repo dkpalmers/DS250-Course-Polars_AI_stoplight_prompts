@@ -1,5 +1,5 @@
 ---
-title: "Unit 3 Task 1: Baseball Database"
+title: "Unit 3 Core Task 1: Baseball Database"
 date: 2025-10-27
 lastmod: 2025-10-27
 weight: 4
@@ -7,6 +7,12 @@ draft: false
 # search related keywords
 keywords: [""]
 ---
+
+::: {.callout-note}
+**Canvas:** W07 U3: Core Task 1 — DataBaseBall  
+**Type:** Core Task (1 pt, complete/incomplete)  
+**Copilot:** Allowed for syntax lookup; disallow for answer generation.
+:::
 
 ### Background
 
@@ -76,37 +82,22 @@ Polars Definitive Guide
 Polars User Guide, [Getting Started: Expressions and Context](https://docs.pola.rs/user-guide/getting-started/#expressions-and-contexts)
 :::
 
-### Questions and Tasks
+### Core Questions
+
+
+**Skills:** SQLite connection, reading queries into Polars
 
 Download the [Unit 3 Task 1 Template](../Templates/unit3_task1_template.qmd).
 
 1. __Use an SQL query to pull in the batting table. Then, with Python Polars calculate the total number of at bats and the batting average for each year a player played. Then, filter the data frame to only include rows in which the player had at least 10 at bats that year. Sort the dataframe from highest batting average to lowest, and then by playerid alphabetically. Show the top 5 results in your report.__
 
-Note: A batting average is meant to measure how often a player puts the ball in play and gets to base safely. For this task, use a simplified version of batting average defined as the sum of hits (labeled 'H') divided by number of at bats (labeled 'AB').
+   Note: A batting average is meant to measure how often a player puts the ball in play and gets to base safely. For this task, use a simplified version of batting average defined as the sum of hits (labeled 'H') divided by number of at bats (labeled 'AB').
 
 1. __Use an SQL query to pull in the batting table. Then, with Python Polars calculate the batting average for each player over their entire career (all years combined). Only include players with at least 100 at bats over their entire career. Sort the dataframe from highest batting average to lowest, and then by playerid alphabetically. Show the top 5 results in your report.__ 
 
 
 ### Submission:
-::: {.callout-note collapse="true"}
-When you have completed the report, you will need to follow this process to submit your work:
-
-1. Have this assignment's template/quarto file open in VS Code and nothing else
-1. Click `Preview Button` in VS Code in the top right of the screen
-    a. This will render the project but also entire course work portfolio into `HTML` files for review
-    b. Confirm everything displas as you would like it to
-    c. How you see it will be how it is viewed for grading
-    d. If there is an error in any cell of the quarto files, the rendering will stop and you will need to fix the error before rendering again (if you get stuck post your error in Slack)
-1. Once the report is confirmed close the preview and open a VS Code `Terminal`
-    a. click `Terminal` in the top menu bar and then `New Terminal`
-1. Type the following in the terminal `quarto render `
-    a. Then drag and drop this assignment into the terminal. This will add the file path to the terminal command
-    a. Press Enter
-1. This will render the project into a `HTML` file in the same location as the `.qmd` file
-1. To locate the file in VS Code
-    a. Right click on the file in the file explorer and select `Reveal in File Explorer`(Win) or `Reveal in Finder`(Mac)
-1. Upload `HTML` file into Canvas
-:::
+{{< include ../_submission_html.qmd >}}
 
 
 ### Deliverables:
