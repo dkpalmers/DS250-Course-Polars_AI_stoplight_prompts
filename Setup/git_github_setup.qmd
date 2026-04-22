@@ -35,7 +35,7 @@ Note: Changes have been made to this course since the video was recorded. The vi
 
 1. [Install](https://desktop.github.com/) GitHub Desktop  
 
-1. __Git a Course Work Portfolio in GitHub__
+<!-- 1. __Git a Course Work Portfolio in GitHub__
     a.  __Use the Portfolio Template in Data Science GitHub repo__
         * __Navigate to the [Course Work Portfolio](https://github.com/byuidatascience/course_work_portfolio) in GitHub__  
         * __Click the Green Button `Use this template` and select `Create a new repository`__  
@@ -99,4 +99,4 @@ Note: Changes have been made to this course since the video was recorded. The vi
 
 1. __Fix for a common bug__
     a. __Fix for the main page loading the ReadMe.md file instead of the portfolio website__
-        * __Run `quarto publish gh-pages` in the terminal of VS Code__
+        * __Run `quarto publish gh-pages` in the terminal of VS Code__ -->
