@@ -1,11 +1,11 @@
 ---
 title: "DS 250: Data Science Programming"
-subtitle: "Using pandas, lets-plot, scikit-learn, and NumPy to Program with Data"
+subtitle: "Using polars, lets-plot, scikit-learn, and NumPy to Program with Data"
 ---
 
 ## How to navigate this course?
 
-Use the top menue to navigate to specific assignments, or use the Setup menu to get your computer ready for the course
+Use the top menu to navigate to specific assignments, or use the Setup menu to get your computer ready for the course.
 
 ## [Setup](setup.qmd)
 

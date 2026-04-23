@@ -1,5 +1,5 @@
 ---
-title: "Unit 3 Task 4: Longevity and Highest Paid Positions"
+title: "Unit 3 Stretch Task: Longevity and Highest Paid Positions"
 date: 2025-10-27
 lastmod: 2025-10-27
 weight: 4
@@ -7,6 +7,12 @@ draft: false
 # search related keywords
 keywords: [""]
 ---
+
+::: {.callout-note}
+**Canvas:** W08 U3: Stretch Task — Longevity and Highest Paid Positions  
+**Type:** Stretch Task (1 pt, complete/incomplete)  
+**Copilot:** Allowed for syntax lookup; disallow for answer generation.
+:::
 
 ### Background
 
@@ -41,6 +47,8 @@ In other words, if an assignment is due on Wednesday, we will cover the material
 
 The table(s) you choose to solve the problem with may lead you down different code paths and learning new skills. In order not to bias/lead you down one path or the other, no reading links are provided, but you may need to research and learn new Polars commands.
 
+**Skills:** aggregates over joined tables, ranking positions
+
 ### Question 1
 
 Identify the top 10 players with the longest Major League Baseball careers. Include their:
@@ -74,25 +82,7 @@ The highest_salary column should display the highest salary ever earned by a pla
 __Hint__: Beware, it is common for a player to play multiple positions in a single year. For this analysis, each player’s salary should only be counted toward one position in a given year. You get to determine which position to count it towards. **Explain how you decided which position a player's salary should be counted toward in those situations, and why that is a good approach.**
 
 ### Submission:
-::: {.callout-note collapse="true"}
-When you have completed the report, you will need to follow this process to submit your work:
-
-1. Have this assignment's template/quarto file open in VS Code and nothing else
-1. Click `Preview Button` in VS Code in the top right of the screen
-    a. This will render the project but also entire course work portfolio into `HTML` files for review
-    b. Confirm everything displas as you would like it to
-    c. How you see it will be how it is viewed for grading
-    d. If there is an error in any cell of the quarto files, the rendering will stop and you will need to fix the error before rendering again (if you get stuck post your error in Slack)
-1. Once the report is confirmed close the preview and open a VS Code `Terminal`
-    a. click `Terminal` in the top menu bar and then `New Terminal`
-1. Type the following in the terminal `quarto render `
-    a. Then drag and drop this assignment into the terminal. This will add the file path to the terminal command
-    a. Press Enter
-1. This will render the project into a `HTML` file in the same location as the `.qmd` file
-1. To locate the file in VS Code
-    a. Right click on the file in the file explorer and select `Reveal in File Explorer`(Win) or `Reveal in Finder`(Mac)
-1. Upload `HTML` file into Canvas
-:::
+{{< include ../_submission_html.qmd >}}
 
 
 ### Deliverables:
