@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W10 U4: Stretch Task — Regression ML  
+**Canvas:** U4: Stretch Task — Regression ML  
 **Type:** Stretch Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::

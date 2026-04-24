@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W08 U3: Core Task 3 — Joins  
+**Canvas:** U3: Core Task 3 — Joins  
 **Type:** Core Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::

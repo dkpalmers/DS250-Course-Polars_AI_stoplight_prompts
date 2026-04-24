@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W04 U1: Core Task 3 — Creating New Columns  
+**Canvas:** U1: Core Task 3 — Creating New Columns  
 **Type:** Core Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::

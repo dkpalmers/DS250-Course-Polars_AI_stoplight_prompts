@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W06 U2: Core Task 3 — Missing Data  
+**Canvas:** U2: Core Task 3 — Missing Data  
 **Type:** Core Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::

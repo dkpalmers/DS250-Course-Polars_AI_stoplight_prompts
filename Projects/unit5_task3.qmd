@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W12 U5: Core Task 3 — Star Wars for Dummies  
+**Canvas:** U5: Core Task 3 — Star Wars for Dummies  
 **Type:** Core Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::

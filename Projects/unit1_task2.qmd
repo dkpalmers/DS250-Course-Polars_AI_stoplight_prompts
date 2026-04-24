@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W03 U1: Core Task 2 — Famous Names and You  
+**Canvas:** U1: Core Task 2 — Famous Names and You  
 **Type:** Core Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::

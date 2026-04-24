@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W09 U4: Core Task 2 — How Good Is It, Really?  
+**Canvas:** U4: Core Task 2 — How Good Is It, Really?  
 **Type:** Core Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::

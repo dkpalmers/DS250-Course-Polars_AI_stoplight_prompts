@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W11 U5: Core Task 2 — Recoding Variables for ML  
+**Canvas:** U5: Core Task 2 — Recoding Variables for ML  
 **Type:** Core Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::

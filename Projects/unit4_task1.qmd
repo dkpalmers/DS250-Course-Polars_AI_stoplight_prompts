@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W09 U4: Core Task 1 — Can You Predict That?  
+**Canvas:** U4: Core Task 1 — Can You Predict That?  
 **Type:** Core Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::

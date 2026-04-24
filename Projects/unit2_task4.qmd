@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W06 U2: Stretch Task — Comparing Delay Types: Pivot  
+**Canvas:** U2: Stretch Task — Comparing Delay Types: Pivot  
 **Type:** Stretch Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::

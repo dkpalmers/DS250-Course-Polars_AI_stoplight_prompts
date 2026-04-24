@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W02 U0: Core Task 2 — Testing, Testing, 1,2,3
+**Canvas:** U0: Core Task 2 — Testing, Testing, 1,2,3
 **Type:** Core Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::

@@ -9,7 +9,7 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** W08 U3: Stretch Task — Longevity and Highest Paid Positions  
+**Canvas:** U3: Stretch Task — Longevity and Highest Paid Positions  
 **Type:** Stretch Task (1 pt, complete/incomplete)  
 **Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::
