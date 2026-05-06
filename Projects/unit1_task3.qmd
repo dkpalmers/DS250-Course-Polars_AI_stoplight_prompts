@@ -42,7 +42,13 @@ Review the readings in the previous tasks as needed. (Consider reading the optio
 __Download this [Unit 1 Task 3 Template](../Templates/unit1_task3_template.qmd) template. The answer to each question should include a chart **and** a written response. The years labels on your charts should not include a comma. At least **one** of your charts must include additional reference marks.__    
 
 1. __Make a new column that represents the total number of babies with your name for only those states in which you have lived. (If you have only ever lived in one state, pick at least one other state so you get practice summing across columns). Make a graph displaying that total for your name over time.__  
-1. __Let's look at a name that is special for members of the church: Brigham. For each year, calculate what proportion of babies named Brigham were born in Idaho and Utah? Make a graph displaying the proportion over time.__
+1. Let's look at a name that is special for members of the church: Brigham. __For each year__, calculate what proportion of babies named Brigham in the country were born specifically in Idaho and Utah? 
+$$
+\frac{Brigham_{ID+UT}}{Brigham_{Total}}
+$$
+
+Make a graph displaying the proportion over time.
+
 1. __Consider doing some data validation. For the name David, calculate a sum of all 50 states and District of Columbia for each year. Now compare that total to the value in the 'Total' column. Are there any years that they do not agree?__ 
 
 ### Submission:

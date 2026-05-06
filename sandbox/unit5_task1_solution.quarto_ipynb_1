@@ -1,0 +1,192 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Client Report - String Manupulation with Regex\"\n",
+        "subtitle: \"Unit 5 Task 1\"\n",
+        "author: \"[STUDENT NAME]\"\n",
+        "format:\n",
+        "  html:\n",
+        "    self-contained: true\n",
+        "    page-layout: full\n",
+        "    title-block-banner: true\n",
+        "    toc: true\n",
+        "    toc-depth: 3\n",
+        "    toc-location: body\n",
+        "    number-sections: false\n",
+        "    html-math-method: katex\n",
+        "    code-fold: true\n",
+        "    code-summary: \"Show the code\"\n",
+        "    code-overflow: wrap\n",
+        "    code-copy: hover\n",
+        "    code-tools:\n",
+        "        source: false\n",
+        "        toggle: true\n",
+        "        caption: See code\n",
+        "execute: \n",
+        "  warning: false\n",
+        "    \n",
+        "---"
+      ],
+      "id": "0c771c76"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import polars as pl\n",
+        "import requests\n",
+        "import io\n",
+        "import numpy as np\n",
+        "from lets_plot import *\n",
+        "\n",
+        "LetsPlot.setup_html(isolated_frame=True)"
+      ],
+      "id": "fc7d75be",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## QUESTION 1\n",
+        "\n",
+        "__Load in the Star Wars Data.__ Sometimes data doesn't come in a clean form and metadata listed before the header. Use the parameters in the read_csv function to avoid the rows that prevent a successful read.\n",
+        "\n",
+        "[link to read_csv docs](http://docs.pola.rs/api/python/stable/reference/api/polars.read_csv.html)\n"
+      ],
+      "id": "3c783639"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Students should manually look at the data to see that there are ten rows above the data that are nonesense. If they don't use skip rows, the read_csv function fails because polars wants to infer the schema based on the first rows. Because on row 11 the data gains additional rows, the function throws the error. Simply skip 10 rows to start the schema on actual data and the error is avoided.\n",
+        "\n",
+        "data = pl.read_csv('StarWars_with_emails.csv',\n",
+        "skip_rows=10)\n",
+        "data.head()\n",
+        "data.shape"
+      ],
+      "id": "67ad2a72",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## QUESTION 2\n",
+        "\n",
+        "__Remake the respondent names from the email column.__ Each respondentID has a unique email they used to submit their survey. We can see that each of the emails have a different format for their names. \n",
+        "\n",
+        "Use regex to create a first and last name column for each email.\n",
+        "- Make a table that counts the number of times each domain is used. (take note that sometimes the email domain is not lowercase. Make them uniform for clean counting)\n",
+        "- Make a table that has a first and last name columns instead of an email column. Show the first 5 results.\n"
+      ],
+      "id": "82298b82"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "data = data.with_columns([\n",
+        "    pl.when(pl.col(\"email\").str.to_lowercase().str.contains(\"gmail\"))\n",
+        "      .then(pl.lit(1))\n",
+        "    .when(pl.col(\"email\").str.to_lowercase().str.contains(\"yahoo\"))\n",
+        "      .then(pl.lit(2))\n",
+        "    .when(pl.col(\"email\").str.to_lowercase().str.contains(\"myorg\"))\n",
+        "      .then(pl.lit(3))\n",
+        "    .otherwise(pl.lit(4))\n",
+        "    .alias(\"email_type\")\n",
+        "])\n",
+        "\n",
+        "data.select([\"email\", \"email_type\"]).head(10)"
+      ],
+      "id": "fa923a61",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "data.group_by('email_type').agg(\n",
+        "    pl.col('email_type').count().alias('domail_count')\n",
+        ")"
+      ],
+      "id": "ff124a61",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "data = data.with_columns([\n",
+        "    # everything before the first @\n",
+        "    pl.col(\"email\").str.replace(r\"@.*$\", \"\", literal=False).alias(\"name\"),\n",
+        "\n",
+        "    # everything after the last @\n",
+        "    pl.col(\"email\").str.replace(r\"^.*@\", \"\", literal=False).alias(\"domain\"),\n",
+        "])\n",
+        "\n",
+        "\n",
+        "\n",
+        "data.head()"
+      ],
+      "id": "4feeda74",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "data = data.with_columns([\n",
+        "    pl.col('domain').str.strip_chars_end().str.to_lowercase().alias('domain')\n",
+        "])\n",
+        "\n",
+        "# Make first name\n",
+        "data = data.with_columns([\n",
+        "    pl.when(pl.col('domain') == 'gmail')\n",
+        "    .then(pl.col('name').str.replace(r\"\\..*$\", \"\"))\n",
+        "    .when(pl.col('domain') == 'yahoo')\n",
+        "    .then(pl.col('name').str.replace(r\"^.*_\", \"\"))\n",
+        "    .otherwise(pl.col('name').str.extract(r\"\\d+(.*)$\", 1))\n",
+        "    .alias('first_name')\n",
+        "])\n",
+        "\n",
+        "# Make last name\n",
+        "data = data.with_columns([\n",
+        "    pl.when(pl.col('domain') == 'gmail')\n",
+        "    .then(pl.col('name').str.replace(r\"^.*\\.\", \"\"))\n",
+        "    .when(pl.col('domain') == 'yahoo')\n",
+        "    .then(pl.col('name').str.replace(r\"_.*$\", \"\"))\n",
+        "    .otherwise(pl.col('name').str.replace(r'\\d.*$', \"\"))\n",
+        "    .alias('last_name')\n",
+        "])\n",
+        "\n",
+        "\n",
+        "data.select('name','first_name', 'last_name', 'domain', 'email').head(5)"
+      ],
+      "id": "273a1890",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "venv",
+      "language": "python",
+      "display_name": "venv",
+      "path": "C:\\Users\\drp36\\AppData\\Roaming\\jupyter\\kernels\\venv"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
