@@ -1,0 +1,33 @@
+::: {.callout-note collapse="true"}
+## Where to submit
+
+Your instructor will advise you — or it will be evident in Canvas — whether to submit a rendered `.html` file, or a link to the rendered file on GitHub Pages (`gh-pages`). Do not submit the URL to the GitHub `.qmd` file.
+:::
+
+::: {.callout-note collapse="true"}
+## How to submit (GitHub Pages)
+
+When you have completed the report and are ready to submit, render the project into HTML and publish it to GitHub Pages. Follow these steps:
+
+1. Have this assignment's template/quarto file open in VS Code and nothing else
+1. Click the `Preview` button in VS Code (top right of the screen)
+    a. This renders the project so you can review it
+    b. Confirm everything displays as you would like it to
+    c. How you see it is how it is viewed for grading
+    d. If there is an error in any cell, the rendering stops and you will need to fix the error before rendering again (if you get stuck post your error in Slack)
+1. Once the report is confirmed, close the preview and open the `GitHub Desktop` application
+1. Confirm you are in the correct repository (top left corner)
+1. Confirm you are on the `Main` branch (top left corner — never change off `Main`)
+1. Type a summary of the changes in the `Summary` box
+1. Click `Commit to main` (blue button, bottom left)
+1. Click `Push origin` (blue button, middle right)
+    a. This pushes your changes to GitHub
+    b. The `publish.yml` workflow renders the project into HTML files
+    c. The HTML files are published to the `gh-pages` branch
+    d. The URL of the published project is in the deployment section on GitHub
+        1. In `GitHub Desktop`, click `Open in GitHub` to navigate to the repository
+        2. Click the `Actions` tab and confirm there were no errors in rendering
+        3. Open the `deployment` section on the main repo page to find the URL
+        4. Navigate to the URL and confirm it displays as you intended
+        5. Copy the URL and submit it in Canvas
+:::

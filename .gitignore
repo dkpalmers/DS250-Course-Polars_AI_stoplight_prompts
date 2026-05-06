@@ -7,3 +7,5 @@
 /_Archived Items
 
 **/*.quarto_ipynb
+/AI_files
+combine_qmds.py

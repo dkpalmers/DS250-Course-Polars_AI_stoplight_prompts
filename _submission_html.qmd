@@ -1,0 +1,21 @@
+::: {.callout-note collapse="true"}
+## How to submit (HTML upload)
+
+When you have completed the report, follow this process to submit your work:
+
+1. Have this assignment's template/quarto file open in VS Code and nothing else
+1. Click the `Preview` button in VS Code (top right of the screen)
+    a. This renders the file so you can review it
+    b. Confirm everything displays as you would like it to
+    c. How you see it is how it is viewed for grading
+    d. If there is an error in any cell of the quarto files, the rendering will stop and you will need to fix the error before rendering again (if you get stuck post your error in Slack)
+1. Once the report is confirmed close the preview and open a VS Code `Terminal`
+    a. Click `Terminal` in the top menu bar and then `New Terminal`
+1. Type the following in the terminal: `quarto render `
+    a. Then drag and drop this assignment's `.qmd` file into the terminal. This will add the file path to the command.
+    a. Press Enter
+1. This renders the project into an `.html` file in the same location as the `.qmd` file
+1. To locate the file in VS Code
+    a. Right click on the file in the file explorer and select `Reveal in File Explorer` (Win) or `Reveal in Finder` (Mac)
+1. Upload the `.html` file into Canvas
+:::

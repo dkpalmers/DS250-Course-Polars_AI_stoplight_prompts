@@ -16,8 +16,8 @@ website:
   title: "DS 250"
   favicon: Images/favicon.png
   back-to-top-navigation: true
-  issue-url: https://byuidatascience.github.io/DS250-Course-Polars/issues/new
-  repo-url: https://byuidatascience.github.io/DS250-Course-Polars/
+  issue-url: https://github.com/byuidatascience/DS250-Course-Polars/issues/new
+  repo-url: https://github.com/byuidatascience/DS250-Course-Polars/
   repo-actions: [issue]
   
   # [layout](https://quarto.org/docs/output-formats/page-layout.html)
@@ -39,59 +39,59 @@ website:
       #   file: index.qmd
       - text: "Setup"
         file: setup.qmd
-      - text: "Unit 0 Set-up Check"
-        file: Projects/project_0_dp.qmd
+      - text: "Unit 0: Testing"
+        file: Projects/project_0.qmd
       - text: "Unit 1 Graphing"
         menu:
-          - text: "Task 1"
+          - text: "Core Task 1"
             file: Projects/unit1_task1.qmd
-          - text: "Task 2"
+          - text: "Core Task 2"
             file: Projects/unit1_task2.qmd
-          - text: "Task 3"
+          - text: "Core Task 3"
             file: Projects/unit1_task3.qmd
-          - text: "Task 4"
+          - text: "Stretch Task"
             file: Projects/unit1_task4.qmd
       - text: "Unit 2 Flights"
         menu:
-          - text: "Task 1"
+          - text: "Core Task 1"
             file: Projects/unit2_task1.qmd
-          - text: "Task 2"
+          - text: "Core Task 2"
             file: Projects/unit2_task2.qmd
-          - text: "Task 3"
+          - text: "Core Task 3"
             file: Projects/unit2_task3.qmd
-          - text: "Task 4"
+          - text: "Stretch Task"
             file: Projects/unit2_task4.qmd
       - text: "Unit 3 DataBaseBall"
         menu:
-          - text: "Task 1"
+          - text: "Core Task 1"
             file: Projects/unit3_task1.qmd
-          - text: "Task 2"
+          - text: "Core Task 2"
             file: Projects/unit3_task2.qmd
-          - text: "Task 3"
+          - text: "Core Task 3"
             file: Projects/unit3_task3.qmd
-          - text: "Task 4"
+          - text: "Stretch Task"
             file: Projects/unit3_task4.qmd
       - text: "Unit 4 ML"
         menu:
-          - text: "Task 1"
+          - text: "Core Task 1"
             file: Projects/unit4_task1.qmd
-          - text: "Task 2"
+          - text: "Core Task 2"
             file: Projects/unit4_task2.qmd
-          - text: "Task 3"
+          - text: "Core Task 3"
             file: Projects/unit4_task3.qmd
-          - text: "Task 4"
+          - text: "Stretch Task"
             file: Projects/unit4_task4.qmd
       - text: "Unit 5 ML Prep"
         menu:
-          - text: "Task 1"
+          - text: "Core Task 1"
             file: Projects/unit5_task1.qmd
-          - text: "Task 2"
+          - text: "Core Task 2"
             file: Projects/unit5_task2.qmd
-          - text: "Task 3"
+          - text: "Core Task 3"
             file: Projects/unit5_task3.qmd
-          - text: "Task 4"
+          - text: "Stretch Task"
             file: Projects/unit5_task4.qmd
-      - text: "GitHub Task"
+      - text: "Unit 6 Portfolio"
         file: Projects/unit6.qmd
       # - text: "Workbooks"
       #   file: workbooks.qmd
@@ -111,9 +111,6 @@ website:
     #   contents:
     #     - text: "Projects"
     #       file: projects.qmd
-    #     - text: "---"
-    #     - text: "Project 0: Introduction"
-    #       file: Projects/project_0.qmd
     #     - text: "---"
     #     - text: "Project 1: What's in a Name?"
     #       file: Projects/project_1.qmd

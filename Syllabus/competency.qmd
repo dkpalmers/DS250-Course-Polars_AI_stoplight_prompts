@@ -17,12 +17,12 @@ You must complete __all__ competency items at the level detailed to achieve the 
 Example of a half-step adjustment:
 
  >   Projects 33 points (B+)  
- >   Project Stretchs 4 (A+)  
+ >   Project Stretches 4 (A+)  
  >   Mid-project checkpoints (online only) 5 (A)  
  >   Methods & Calculations checkpoints 5 (B)  
  >   DS Community 5 (A+)  
  >   Coding challenge 3 (A/B)  
- >   The over-under of my work is a B+/A-. My extra work on Project Stretches helps ofset me not meeting the A level project points. Also my extra DS Community efforts to ofset my M&C checkpoints. I am requesting a A for the course.
+ >   The over-under of my work is a B+/A-. My extra work on Project Stretches helps offset me not meeting the A level project points. Also my extra DS Community efforts to offset my M&C checkpoints. I am requesting a A for the course.
 
 You will need to provide a detailed description in your __**Course Goals Letter**__ of the items you completed to support your grade request. The course goals letter is a reflection on your efforts and the competencies they align with as well as your reflection on achieving your goals for this course.  
 
@@ -30,7 +30,7 @@ You will need to provide a detailed description in your __**Course Goals Letter*
 Here is my assessment of my efforts and the competency that they align with, as well as my reflection on achieving my goals for this course:
 
  >   Projects 29 points (B-)  
- >   Project Stretchs 1 (C)  
+ >   Project Stretches 1 (C)  
  >   Mid-project checkpoints (online only) 4 (B+)  
  >   Methods & Calculations checkpoints 4 (C+)  
  >   DS Community 3 (A)  
@@ -44,7 +44,7 @@ Here is my assessment of my efforts and the competency that they align with, as 
 | Element                                   | Requirement     | Description               |
 | :----------------------------------       | --------------- | ------------------------- |
 | __Projects__                              | 34+ Points      | 5 points per project      |
-| __Project Stretchs__                      | At least 3      | 3 projects all stretches  |
+| __Project Stretches__                      | At least 3      | 3 projects all stretches  |
 | __Mid-project checkpoints__               | 5 completed     | Full credit (online only) |
 | __Methods & Calculations checkpoints__    | 6 completed     | All 6 @ 100% Full Points  |
 | __DS Community__                          | At least 3      | --                        |
@@ -56,7 +56,7 @@ Here is my assessment of my efforts and the competency that they align with, as 
 | Element                                   | Requirement     | Description               |
 | :----------------------------------       | --------------- | ------------------------- |
 | __Projects__                              | 29-33 Points    | 5 points per project      |
-| __Project Stretchs__                      | At least 2      | 2 projects all stretches  |
+| __Project Stretches__                      | At least 2      | 2 projects all stretches  |
 | __Mid-project checkpoints__               | 3 completed     | Full credit (online only) |
 | __Methods & Calculations checkpoints__    | 5 completed     | 5 @ 100% Full Points      |
 | __DS Community__                          | At least 2      | --                        |
@@ -68,7 +68,7 @@ Here is my assessment of my efforts and the competency that they align with, as 
 | Element                                   | Requirement     | Description               |
 | :----------------------------------       | --------------- | ------------------------- |
 | __Projects__                              | 24-28 Points    | 5 points per project      |
-| __Project Stretchs__                      | At least 1      | 1 projects all stretches  |
+| __Project Stretches__                      | At least 1      | 1 projects all stretches  |
 | __Mid-project checkpoints__               | 3 completed     | Full credit (online only) |
 | __Methods & Calculations checkpoints__    | 3 completed     | 3 @ 100% Full Points      |
 | __DS Community__                          | At least 1      | --                        |
@@ -80,7 +80,7 @@ Here is my assessment of my efforts and the competency that they align with, as 
 | Element                                   | Requirement     | Description               |
 | :----------------------------------       | --------------- | ------------------------- |
 | __Projects__                              | 14-23 Points    | 5 points per project      |
-| __Project Stretchs__                      | None            | 0 projects all stretches  |
+| __Project Stretches__                      | None            | 0 projects all stretches  |
 | __Mid-project checkpoints__               | 1 completed     | Full credit (online only) |
 | __Methods & Calculations checkpoints__    | 2 completed     | 2 @ 100% Full Points      |
 | __DS Community__                          | None            | --                        |

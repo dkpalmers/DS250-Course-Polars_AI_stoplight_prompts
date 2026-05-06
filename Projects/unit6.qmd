@@ -1,5 +1,5 @@
 ---
-title: "Project 6: Git Your DS Portfolio Online"
+title: "Unit 6 Core Task 1: Git Your DS Portfolio Online"
 date: 2020-05-01T11:02:05+06:00
 lastmod: 2020-09-15T10:42:26+06:00
 weight: 6
@@ -7,6 +7,12 @@ draft: false
 # search related keywords
 keywords: [""]
 ---
+
+::: {.callout-note}
+**Canvas:** U6: Core Task 1 — Git Your DS Portfolio Online  
+**Type:** Core Task (1 pt, complete/incomplete)  
+**Copilot:** Allowed for syntax lookup; disallow for answer generation.
+:::
 
 ### Background
 
@@ -45,11 +51,14 @@ For this project, you will be making a public website that is a data science por
 -   [Example 1 - Data Science Portfolio](https://github.com/rodrigo-arenas/portfolio)
 -   [Example 2 - Data Science Portfolio](https://github.com/topics/portfolio-website)
 
-### Questions and Tasks
+### Core Questions
 
-There are multiple ways to set-up a website using quarto documents. A succinct synopsis of the [3 ways is found here](https://quarto.org/docs/publishing/github-pages.html#:~:text=There%20are%20three%20ways%20to,publish%20from%20the%20docs%20directory.). We will walk through the first and 3rd ways.
 
-The first option is to “Render sites on your local machine to the `docs` directory, check the rendered site into GitHub, and then configure your GitHub repo to publish from the `docs` directory. This is referred to as Method 1 below. We will show how to do this using a starting template, or from scratch. The 3rd option (also called Method 3) is to “Use a GitHub Action to automatically render your files and publish the resulting content whenever you push a source code (e.g. quarto file) change to your repository”. This will be illustrated using a template file as a starting point.
+**Skills:** GitHub Pages publish, `publish.yml`, portfolio README
+
+There are multiple ways to set-up a website using quarto documents. A succinct synopsis of the [ways Quarto supports is found here](https://quarto.org/docs/publishing/github-pages.html#:~:text=There%20are%20three%20ways%20to,publish%20from%20the%20docs%20directory.). Below are the three approaches we support in this course.
+
+Methods 1 and 2 both "render sites on your local machine to the `docs` directory, check the rendered site into GitHub, and then configure your GitHub repo to publish from the `docs` directory." Method 1 uses a starting template; Method 2 builds from scratch. Method 3 uses a GitHub Action to automatically render your files and publish whenever you push a source change.
 
 Choose 1 of the 3 tabs below and follow those instructions for publishing a portfolio website hosted through your own personal GitHub repository.
 
@@ -111,7 +120,7 @@ Choose 1 of the 3 tabs below and follow those instructions for publishing a port
 
 8.  It may take a minute, but when you return to the website (see step 4d), any changes you made should be visible.
 
-## Method 1: From scratch, publish from docs
+## Method 2: From scratch, publish from docs
 
 1.  Go to File -\> Open Folder
 
@@ -195,7 +204,7 @@ Choose 1 of the 3 tabs below and follow those instructions for publishing a port
     NOTE: If you make changes to the \_quarto.yml file, you will need to rebuild the website by running \`quarto render\` in the terminal before pushing to GitHub. Quarto render will rebuild every webpage on your site.
     :::
 
-## Method 3: GitHub actions, gh-pages branch
+## Method 3: GitHub Actions, gh-pages branch
 
 ** Video walk through of the instructions below**
 

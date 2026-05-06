@@ -41,9 +41,9 @@ To use GitHub Copilot, you must first install the GitHub Copilot extension.
 
     1. If you have previously authorized Visual Studio Code for your account on GitHub, GitHub Copilot will be automatically authorized.  
 
-    1. If you don't get the prompt to authorize, click the bell icon in the bottom panel of the Visual Studio Code window.  
+   1. If you don't get the prompt to authorize, click the bell icon in the bottom panel of the Visual Studio Code window.
 
-()![image](/Images/copilot-activate.png)  
+   ()![image](/Images/copilot-activate.png)
 
 1. In your browser, GitHub will request the necessary permissions for GitHub Copilot. To approve these permissions, click Authorize Visual Studio Code.  
 
