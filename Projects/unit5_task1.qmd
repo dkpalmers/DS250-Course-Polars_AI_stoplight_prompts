@@ -18,7 +18,7 @@ keywords: [""]
 
 Survey data is notoriously difficult to munge.  Even when the data is recorded cleanly the options for ‘write in questions’, ‘choose from multiple answers’, ‘pick all that are right’, and ‘multiple choice questions’ makes storing the data in a tidy format difficult.
 
-In 2014, FiveThirtyEight surveyed over 1000 people to write the article titled, [America’s Favorite ‘Star Wars’ Movies (And Least Favorite Characters)](https://fivethirtyeight.com/features/americas-favorite-star-wars-movies-and-least-favorite-characters/). They have provided the data on [GitHub](https://github.com/fivethirtyeight/data/tree/master/star-wars-survey). We have done some initial data cleaning and added ficitious email addresses to the dataset.
+In 2014, FiveThirtyEight surveyed over 1000 people to write the article titled, [America’s Favorite ‘Star Wars’ Movies (And Least Favorite Characters)](https://byuistats.github.io/M335/star_wars_article_538.html). They have provided the data on [GitHub](https://github.com/fivethirtyeight/data/tree/master/star-wars-survey). We have done some initial data cleaning and added fictitious email addresses to the dataset.
 
 For this project, your client would like to use the Star Wars survey data in a new marketing initiative. They would like to email survey participants with product offers, but also use the responses to build a machine learning model to predict a person's outcome based on a few responses about Star Wars movies. 
 
@@ -37,7 +37,7 @@ The Client is who performed the survey but outsourced the analitics to a 3rd par
 
 __URL:__ [Star Wars data](/Data/StarWars_with_emails.csv) 
 
-__Information:__ [Article](https://fivethirtyeight.com/features/americas-favorite-star-wars-movies-and-least-favorite-characters/)
+__Information:__ [Article](https://byuistats.github.io/M335/star_wars_article_538.html)
 
 
 ### Readings
