@@ -11,6 +11,7 @@ project:
 
 resources:
   - Data/**
+  - "star_wars_article_538.html"
   
 website:
   title: "DS 250"
