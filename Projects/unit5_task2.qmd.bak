@@ -1,5 +1,5 @@
 ---
-title: "Unit 5 Core Task 3: Star Wars for Dummies"
+title: "Unit 5 Core Task 2: Recoding Range Variables"
 date: 2025-10-29
 lastmod: 2025-10-29
 weight: 5
@@ -9,9 +9,9 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** U5: Core Task 3 — Star Wars for Dummies  
+**Canvas:** U5: Core Task 2 — Recoding Variables for ML  
 **Type:** Core Task (1 pt, complete/incomplete)  
-**AI Use: ??** Allowed for syntax lookup; disallow for answer generation.
+**Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::
 
 ### Background
@@ -35,29 +35,29 @@ The Client is who performed the survey but outsourced the analitics to a 3rd par
 
 ### Data
 
-__URL:__ [Star Wars data](/Data/StarWars_with_emails.csv)
+__URL:__ [Star Wars data](/Data/StarWars_with_emails.csv)   
 
 __Information:__ [Article](https://byuistats.github.io/M335/star_wars_article_538.html)
 
 
 ### Readings
 
-- [One Hot Encoding Example](https://datasensei.medium.com/how-to-transform-nominal-data-for-ml-with-onehotencoder-from-scikit-learn-f6febfefb3c6)
-- [Why get_dummies is a bad idea for your ML project](https://digestize.medium.com/why-is-using-get-dummies-a-bad-idea-for-your-ml-project-bcfd2683d2e4)
-- Skim Python Polars: The Definitive Guide, [Chapter 14, Vertical and Horizontal Stacking](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch14.html#id181)sections
+No new readings. Apply the new concepts in this unit and review/practice concepts from past units.
+
 
 ### Core Questions
 
 
-**Skills:** one-hot encoding, target creation, full ML pipeline
+**Skills:** ordinal encoding, recoding ranges to numbers
 
-1. __Finish prepping the data for machine learning:__
+1. __Filter the dataset to 835 respondents that have seen at least one film__ (Hint: Don’t use the column `Have you seen any of the 6 films in the Star Wars franchise?`)
 
-    a. Drop the RespondentID column, first and last name columns, and email column
-    a. One-hot encode all remaining non-numeric columns 
-    a. Create your target (also known as “y” or “label”) column to indicate whether a person had a Household Income $50,000 or greater  
+1. __*Begin* to clean and format the data so that it can be used in a machine learning model.__ As you format the data, you should complete each item listed below. In your final report provide an excerpt of the reformatted data with a short description of the changes made.  
 
-1. __Build a machine learning model that predicts whether a person had a Household Income $50,000 or greater with at least 55% accuracy. Describe your model and report the accuracy.__
+    a. Create a new column that converts the age ranges to a number. Remove the original age range categorical column  
+    a. Create a new column that converts the education groupings to a number. Remove the original school categorical column  
+    a. Create a new column that converts the income ranges to a number. Remove the original income range categorical column  
+    a. Create a new column that converts favorability ratings to a number. Remove the original favorability categorical columns.
 
 
 ### Submission / Deliverables:

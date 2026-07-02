@@ -1,7 +1,7 @@
 ---
-title: "Unit 4 Core Task 3: Show me"
-date: 2025-10-29
-lastmod: 2025-10-29
+title: "Unit 4 Stretch Task: Regression ML"
+date: 2025-04-08T11:02:05+06:00
+lastmod: 2025-04-08T10:42:26+06:00
 weight: 5
 draft: false
 # search related keywords
@@ -9,9 +9,9 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** U4: Core Task 3 — Show Me  
-**Type:** Core Task (1 pt, complete/incomplete)  
-**AI Use: ??** Allowed for syntax lookup; disallow for answer generation.
+**Canvas:** U4: Stretch Task — Regression ML  
+**Type:** Stretch Task (1 pt, complete/incomplete)  
+**Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::
 
 
@@ -39,29 +39,33 @@ __Information:__ [Data description](https://github.com/byuidatascience/data4dwel
 
 ### Readings
 
-A scan of these articles can be helpful, or find your own resources on the web.
+- [All regressor algorithms in scikit-learn](https://www.kaggle.com/code/grigol1/all-regression-models-55-sklearn-models) (skim)
+- [How to choose a good evaluation metric for your Machine learning model](https://web.archive.org/web/20240213170741/https://ranvir.xyz/blog/how-to-evaluate-your-machine-learning-model-like-a-pro-metrics/) (you can start in section 11 - Evaluating for regression problems)
+- Optional Review: [Polars User Guide, Joins](https://docs.pola.rs/user-guide/transformations/joins/) 
 
-- [Exhaustive list of classifiers in scikit-Learn](https://www.kaggle.com/code/grigol1/all-classification-models-40-sklearn-models) (skim)
-- [Pros and cons of popular classifiers](https://www.geeksforgeeks.org/comprehensive-guide-to-classification-models-in-scikit-learn/) 
+Optional/Alternative Reading
+
+::: {.callout-note collapse="true"}
+- [Polars Definitive Guide, Chap 14, Joining and Concatenating](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch14.html)
+- [Polars Cookbook, Chap 8 Reshaping and Tidying Data, Joining DataFrames](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_08.xhtml#_idParaDest-282)
 - [Another overview and description of pros and cons for popular classifiers and regression models](https://www.geeksforgeeks.org/supervised-machine-learning/)
-- [Decision Tree Classification in Python](https://www.datacamp.com/community/tutorials/decision-tree-classification-python)    
 - [Boosted algorithms in scikit-learn](https://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting)
-- [scikit-plot package](https://github.com/reiinakano/scikit-plot) 
+:::
+
  
+### Stretch Questions
 
-### Core Questions
 
+**Skills:** regression models, metrics beyond accuracy
 
-**Skills:** model comparison, permutation importance
+1. __Join the `dwellings_neighborhoods_ml.csv` data to the `dwelling_ml.csv` on the `parcel` column to create a new dataset. Duplicate the code for the model you recommended in the previous taskn above and update it to use this data.__ Explain the differences and if this changes the model you recomend to the Client.  
 
-1. __Repeat the classification exercise using 2 different algorithms/models. Explain the differences between the 3 models__ (your original one, and the 2 new ones for this task).
-
-1. For each model (your original one, and the 2 new ones for this task), display the classification report and the importance metrics to identify the most important features.  Discuss which model you would recommend to the client and why.
+1. __Can you build a model that predicts the year a house was built?__ Note this is a regression ML model, not a classifier. Report appropriate evaluation metrics for the model. Explain the model and the evaluation metrics you used to determine if the model is good.
 
 
 
 ### Submission / Deliverables:
 
-_Use this [unit4_task3_template](../Templates/unit4_task3_template.qmd) to create your Client Report. Answer the questions. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
+_No template is provided for this assignment. You must create your own file as part of the task. Answer the questions in this assignment. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
 
 {{< include ../_submission_github.qmd >}}

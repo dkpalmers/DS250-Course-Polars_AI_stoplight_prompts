@@ -1,5 +1,5 @@
 ---
-title: "Unit 2 Stretch Task: Comparing Delay Types - Pivot"
+title: "Unit 2 Core Task 2: Flights - Aggregation"
 date: 2025-10-29
 lastmod: 2025-10-29
 weight: 3
@@ -9,9 +9,9 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** U2: Stretch Task — Comparing Delay Types: Pivot  
-**Type:** Stretch Task (1 pt, complete/incomplete)  
-**AI Use: ??** Allowed for syntax lookup; disallow for answer generation.
+**Canvas:** U2: Core Task 2 — Flights: Aggregation  
+**Type:** Core Task (1 pt, complete/incomplete)  
+**Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::
 
 ### Background
@@ -38,24 +38,35 @@ __Subject Matter:__ [Types of Delay](https://aspm.faa.gov/aspmhelp/index/Types_o
 
 ### Readings
 
-Python Polars: The Definitive Guide, [Chapter 15, Reshaping (especially the intro, pivot and unpivot)](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch15.html)
+Polars Cookbook: Chapter 4 Data Transformation Techniques
 
-#### Optional / Alternative Reading
-
-Polars Cookbook, [Chapter 8, Reshaping and Tidying Data](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_08.xhtml#_idParaDest-270)
-
-### Stretch Questions
+- [Exploring basic aggregation](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_04.xhtml#_idParaDest-151)
+- [using group by aggregation](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_04.xhtml#_idParaDest-158)
 
 
-**Skills:** `pivot` / `unpivot`, reshaping for comparisons
+#### Optional/alternative reading:
 
- 1. __Which delay is the worst delay?__ Keep working with the cleaned dataset you created in the previous task. Compare the proportion of flights delayed due to Carrier, to Security, and to Late Aircraft. Show this comparison in a Chart and a Table. Describe your results.
+::: {.callout-note collapse="false"}
+Polars Definitive Guide
+- [Chapter 13, Summarizing and Aggregating](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch13.html) (Advanced Methods section is optional)
 
- 2. Create another chart that shows the proportion of delays for each reason (Carrier, Security, and Late Aircraft) across all 7 airports. Describe your results.
+Polars User Guide, [Getting Started: Expressions and Context](https://docs.pola.rs/user-guide/getting-started/#expressions-and-contexts)
+:::
+
+### Core Questions
+
+
+**Skills:** `group_by`, `agg`, sorting aggregates
+
+1. __Calculate the sample size (i.e. number of rows in the dataset) for each airport in each year__. What do you notice?
+
+1. __Which airport has the worst delays?__ Describe the metric you chose, and why you chose it to determine the “worst” airport. Your answer should include a summary table that lists (for each airport) the total number of flights, total number of delayed flights, proportion of delayed flights, and average delay time in hours. 
+
+1. __Create a barplot (polished and ready for presentation, including labels, title, etc.) showing the proportion of all flights that are delayed at each airport. Describe what you learn from this graph.__  
+
 
 ### Submission / Deliverables:
 
-No template is provided. You must create your own file. Answer the questions. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
+_Use this [unit2_task2_template](../Templates/unit2_task2_template.qmd) to create your Client Report. Answer the questions. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
 
 {{< include ../_submission_github.qmd >}}
-

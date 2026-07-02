@@ -1,5 +1,5 @@
 ---
-title: "Unit 4 Core Task 1: Can You Predict That?"
+title: "Unit 4 Core Task 3: Show me"
 date: 2025-10-29
 lastmod: 2025-10-29
 weight: 5
@@ -9,9 +9,9 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** U4: Core Task 1 — Can You Predict That?  
+**Canvas:** U4: Core Task 3 — Show Me  
 **Type:** Core Task (1 pt, complete/incomplete)  
-**AI Use: ??** Allowed for syntax lookup; disallow for answer generation.
+**Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::
 
 
@@ -39,32 +39,29 @@ __Information:__ [Data description](https://github.com/byuidatascience/data4dwel
 
 ### Readings
 
-- [Machine Learning Introduction](/Course%20Materials/ml.qmd)
-- [A visual introduction to machine learning](https://narrative-flow.github.io/exploratory-study-2/)
-- [Calculate model accuracy in scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html)
-- [A few popular models to choose from, and a review of Machine Learning workflow](https://www.educative.io/blog/scikit-learn-cheat-sheet-classification-regression-methods)
+A scan of these articles can be helpful, or find your own resources on the web.
+
 - [Exhaustive list of classifiers in scikit-Learn](https://www.kaggle.com/code/grigol1/all-classification-models-40-sklearn-models) (skim)
-
-
-#### Optional References
-
+- [Pros and cons of popular classifiers](https://www.geeksforgeeks.org/comprehensive-guide-to-classification-models-in-scikit-learn/) 
+- [Another overview and description of pros and cons for popular classifiers and regression models](https://www.geeksforgeeks.org/supervised-machine-learning/)
 - [Decision Tree Classification in Python](https://www.datacamp.com/community/tutorials/decision-tree-classification-python)    
 - [Boosted algorithms in scikit-learn](https://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting)
-- [scikit-plot package](https://github.com/reiinakano/scikit-plot)  
+- [scikit-plot package](https://github.com/reiinakano/scikit-plot) 
  
 
 ### Core Questions
 
 
-**Skills:** scikit-learn, train/test split, first classifier
+**Skills:** model comparison, permutation importance
 
-1. __Take time to get to know your data.__ Based on some initial exploration, identify 3 variables in the dataset you think will have strong predictive ability for determining if a house was built before 1980. Explain/justify the reasoning behind your guesses (for example with plots).
+1. __Repeat the classification exercise using 2 different algorithms/models. Explain the differences between the 3 models__ (your original one, and the 2 new ones for this task).
+
+1. For each model (your original one, and the 2 new ones for this task), display the classification report and the importance metrics to identify the most important features.  Discuss which model you would recommend to the client and why.
 
 
-1. __Build a classification model labeling houses as being built “before 1980” or “during or after 1980”.__ Your goal is to get 91% accuracy, or higher. Report your final model choice and any other model parameters you may have tweaked (train-test split ratio, tuning parameters, etc).  
 
 ### Submission / Deliverables:
 
-_Use this [unit4_task1_template](../Templates/unit4_task1_template.qmd) to create your Client Report. Answer the questions. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
+_Use this [unit4_task3_template](../Templates/unit4_task3_template.qmd) to create your Client Report. Answer the questions. Each answer should include a written description of your results, code cells with comments, charts and/or tables._  
 
 {{< include ../_submission_github.qmd >}}

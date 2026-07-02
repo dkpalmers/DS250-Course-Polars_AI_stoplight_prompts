@@ -1,7 +1,7 @@
 ---
-title: "Unit 1 Core Task 1: Exploring Names"
-date: 2025-03-31T11:02:05+06:00
-lastmod: 2025-03-31T11:02:05+06:00
+title: "Unit 1 Core Task 2: Famous Names and You"
+date: 2025-10-24
+lastmod: 2025-10-24
 weight: 2
 draft: false
 # search related keywords
@@ -9,9 +9,9 @@ keywords: [""]
 ---
 
 ::: {.callout-note}
-**Canvas:** U1: Core Task 1 — Exploring Names  
+**Canvas:** U1: Core Task 2 — Famous Names and You  
 **Type:** Core Task (1 pt, complete/incomplete)  
-**AI Use: ??** Allowed for syntax lookup; disallow for answer generation.
+**Copilot:** Allowed for syntax lookup; disallow for answer generation.
 :::
 
 ### Background
@@ -45,35 +45,31 @@ Complete these readings before we cover the material in class. This will help yo
 In other words, if an assignment is due on Wednesday, we will cover the material needed to complete the assignment on Tuesday. Therefore, you should complete the readings on Monday (or anytime before class on Tuesday).
 :::
 
-Read the Polars Cookbook, Chapter 1: Getting Started with Python Polars to get some fundamental understanding of polars and data structures in python. Specifically, read the following sections of the chapter (you can skip the other sections):
+Note: Some of the readings use a little bit of python pandas (an alternative library for data manipulation). Your focus in the readings should be on the plotting commands, the python pandas code used to prepare the data can be glossed over/ignored since we will be using python polars to read in and wrangle data.
 
-- [Introducing Key Features in Polars](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-23)
-- [The Polars DataFrame](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-29)
-- [The Polars Series](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-36)
-- [Understanding Method Chaining](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-59)
+- [P4DS: Chapter 11 Visualisation](https://aeturrell.github.io/python4DS/visualise.html)
+- [P4DS: Chapter 12.1 - 12.3 Layers: Aesthetic mappings and geometries](https://aeturrell.github.io/python4DS/vis-layers.html#introduction)
+- [P4DS: Chapter 14.2 - 14.3 Labels, titles, contextual info, annotations](https://aeturrell.github.io/python4DS/communicate-plots.html#labels-titles-and-other-contextual-information)
 
-For working with rows and columns of a data frame in polars, read the following sections of Python Polars: The Definitive Guide:
+__Optional Readings:__
 
-- Chapter 7 - Beginning Expressions: [Selecting Columns with Expressions](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch07.html#id287) section
-- [Chapter 11 - Filtering and Sorting Rows](https://learning.oreilly.com/library/view/python-polars-the/9781098156077/ch11.html). (You can skip the "Sort Nested Data Types" section if you wish)
+- [P4DS: Rest of Chapter 12](https://aeturrell.github.io/python4DS/vis-layers.html#introduction)
+- [P4DS: Rest of Chapter 14](https://aeturrell.github.io/python4DS/communicate-plots.html#scales)
 
-Optional:
-
-The [Selecting Columns and Filtering Data](https://learning.oreilly.com/library/view/polars-cookbook/9781805121152/B21621_01.xhtml#_idParaDest-47) section of Chapter 1 in the Polars Cookbook.
 
 ### Core Questions
 
 
-**Skills:** `filter`, string filtering, summary stats
+**Skills:** `filter`, `sort`, ranking by count
 
-__Download this [Unit 1 Task 1](../Templates/unit1_task1_template.qmd) template. The answer to each question should include code and an answer written in a full sentence.__  
+__Download this [Unit 1 Task 2 Template](../Templates/unit1_task2_template.qmd) template. The answer to each question should include a chart **and** a written response. The years labels on your charts should not include a comma. At least **one** of your charts must include reference marks.__    
 
-1. __What was the earliest year that the name ‘Felisha’ was used?__  
-1. __What year had the most babies named 'David'? How many babies were named 'David' that year?__  
-1. __What year did your name hit its peak? How many babies were named your name in that year?__
-1. __In the most recent year of data, what was the most common female name in Utah?__   
+1. __How does your name at your birth year compare to its use historically?__  
+1. __Think of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?__  
+1. __Mary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names in a single chart. What trends do you notice?__ 
 
 ### Submission:
+
 {{< include ../_submission_html.qmd >}}
 
 
@@ -83,11 +79,10 @@ __Download this [Unit 1 Task 1](../Templates/unit1_task1_template.qmd) template.
 Deliverables are “the quantifiable goods or services that must be provided upon the completion of a project”. In this class the deliverable for each project is a .html file report created using Quarto files. This final section will be the same for each project. 
 :::
 
-_Use this [Unit1_Task1 template](../Templates/unit1_task1_template.qmd) to submit your Client Report._
+_Use this [Unit1_Task2 template](../Templates/unit1_task2_template.qmd) to submit your Client Report._
  
 1. _Answers to the questions | tasks. Each should include a written description of your results, code cells with comments, and any charts and/or tables._  
 
 ::: {.callout-note collapse="false"}
 _Your report should be written in quarto markdown files and rendered to an HTML File. Upload the HTML file in Canvas. (Do not submit the `.qmd` file)_  
 :::
-
