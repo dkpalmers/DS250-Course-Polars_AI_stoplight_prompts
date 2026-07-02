@@ -1,5 +1,5 @@
 ---
-title: "Unit 0 Core Task 2: Testing, Testing, 1,2,3"
+title: "Unit 0: Testing, Testing, 1,2,3"
 date: 2020-05-01T11:02:05+06:00
 lastmod: 2020-09-15T10:42:26+06:00
 weight: 1
@@ -8,10 +8,11 @@ draft: false
 keywords: [""]
 ---
 
+
 ::: {.callout-note}
 **Canvas:** U0: Core Task 2 — Testing, Testing, 1,2,3
 **Type:** Core Task (1 pt, complete/incomplete)  
-**AI Use: ??** Allowed for syntax lookup; disallow for answer generation.
+**AI Use:** 🟢
 :::
 
 

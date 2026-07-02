@@ -11,7 +11,7 @@ keywords: [""]
 ::: {.callout-note}
 **Canvas:** U6: Core Task 1 — Git Your DS Portfolio Online  
 **Type:** Core Task (1 pt, complete/incomplete)  
-**AI Use: ??** Allowed for syntax lookup; disallow for answer generation.
+**AI Use:** 🟢
 :::
 
 ### Background
